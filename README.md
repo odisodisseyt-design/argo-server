@@ -1,5 +1,7 @@
 # Text World — server
 
+Полная инструкция по запуску, переносу состояния и работе в OpenCode: `ONBOARDING.md`.
+
 Серверная часть пошаговой текстовой RPG-платформы. Отвечает за логику, память,
 resolver, логирование и раздачу «чистых» данных клиенту. Приложение — только оболочка.
 
@@ -19,8 +21,8 @@ bash run.sh
 | Переменная | По умолчанию | Назначение |
 |---|---|---|
 | `TW_PROVIDER` | `ollama` | `ollama` / `openai` / `gemini` |
-| `TW_MODEL` | `qwen3:4b` | модель для интента и рассказчика |
-| `TW_OLLAMA_BASE` | `http://127.0.0.1:11434` | адрес Ollama |
+| `TW_MODEL` | `tw-qwen35-2b` | модель для интента и рассказчика, если не выбрана catalog-модель |
+| `TW_OLLAMA_BASE` | `http://127.0.0.1:11435` | адрес Ollama |
 | `TW_OPENAI_BASE` | `https://openrouter.ai/api/v1` | OpenAI-совместимый API |
 | `TW_OPENAI_KEY` | — | ключ |
 | `TW_GEMINI_KEY` | — | ключ Gemini |
