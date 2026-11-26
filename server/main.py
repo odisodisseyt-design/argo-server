@@ -9,6 +9,7 @@ from contextlib import asynccontextmanager
 from typing import Any
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, WebSocket, WebSocketDisconnect
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, Response
 
@@ -57,6 +58,18 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Text World", version="0.0.29", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        settings.public_base.rstrip('/'),
+        "https://odisodisseyt-design.github.io",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type", "Idempotency-Key"],
+)
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 

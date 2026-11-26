@@ -3,6 +3,7 @@ data/
 models/
 ollama-models/
 android/
+web/
 .venv/
 .pytest_cache/
 __pycache__/

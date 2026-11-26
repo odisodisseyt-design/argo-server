@@ -24,6 +24,7 @@
 |---|---|---|
 | Сервер, источник правды | `https://github.com/odisodisseyt-design/argo-server` | этот репозиторий: `server/`, `tests/`, `docs/`, конфиги |
 | Клиент, оболочка | `https://github.com/odisodisseyt-design/argo` | Expo/React Native в `android/mobile`, Kotlin-проект, `version.json`, APK-релизы |
+| Веб-клиент | `https://github.com/odisodisseyt-design/argo-web` | React/Vite, собирается в `/web/` на том же домене |
 
 Сервер **не** должен дублировать клиента: каталог `android/` в старом рабочем дереве
 исключён через `.gitignore`.
@@ -97,6 +98,10 @@ OTA-манифест раздаётся самим сервером:
 
 - `GET /api/updates/manifest` — требует заголовки `expo-protocol-version: 1`, `expo-platform: android`, `expo-runtime-version: 0.1.2`;
 - `GET /api/updates/assets/{name}` — неизменяемые ассеты.
+
+Веб-клиент (`argo-web`) раздаётся Caddy по `/web/` из `/var/www/argo-web`.
+Для кросс-доменной разработки в `server/main.py` включён CORS для домена сервера,
+GitHub Pages и `localhost:3000`.
 
 Каталог `data/updates/` обязателен для OTA и тоже переносится.
 
