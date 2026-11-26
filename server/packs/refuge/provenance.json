@@ -1,0 +1,451 @@
+{
+  "version": "1.0",
+  "policy": "canon_fact — прямо подтверждено исходником; campaign_decision — игровая договорённость. Неизвестное хранится как null/unknown. Сюжет Сергея — параллельная история, а не маршрут игрока.",
+  "source": {
+    "title": "Моё пространственное убежище",
+    "author": "Дмитрий Дорничев",
+    "books": 14,
+    "source_sha256": "efb66cb2dce634371b3c3a38e2d2d95b1a08ce9902363988136781da1e42a1c2",
+    "note": "Отчёт и индекс — доказательный реестр упоминаний, а не исчерпывающая энциклопедия."
+  },
+  "world_scope_values": [
+    "earth",
+    "other_world",
+    "spatial_fragment",
+    "unknown"
+  ],
+  "availability_values": [
+    "pre_system",
+    "system_arrival",
+    "early_apocalypse",
+    "later",
+    "unknown"
+  ],
+  "status_values": [
+    "direct",
+    "direct_example",
+    "inference",
+    "unknown",
+    "conflict",
+    "campaign_decision"
+  ],
+  "canon_facts": [
+    {
+      "id": "cf_stats",
+      "fact": "В примере персонажа показаны сила, ловкость, выносливость, живучесть, магия, ОВ и ОМ; числа индивидуальны.",
+      "source_status": "direct_example",
+      "book": 1,
+      "chapter": null,
+      "evidence": "Пример характеристик Сергея в книге 1."
+    },
+    {
+      "id": "cf_first_kill",
+      "fact": "После убийства первого зомби системным оружием приходит уведомление о вступлении в игру, 1-м уровне и случайной награде.",
+      "source_status": "direct",
+      "book": 1,
+      "chapter": null,
+      "evidence": "Уведомление после первого убийства в книге 1."
+    },
+    {
+      "id": "cf_reward",
+      "fact": "В отдельных уведомлениях убийство зомби даёт 1 опыт и 1 монету выжившего; единой формулы нет.",
+      "source_status": "direct_example",
+      "book": 1,
+      "chapter": null,
+      "evidence": "Уведомление о награде в книге 1."
+    },
+    {
+      "id": "cf_vaccine_1",
+      "fact": "Браслет вакцины 1 уровня: четыре инъекции, одна доза защищает от одного укуса и не защищает от инфекции выше 1 уровня.",
+      "source_status": "direct",
+      "book": 2,
+      "chapter": null,
+      "evidence": "Описание браслета вакцины в книге 2."
+    },
+    {
+      "id": "cf_vaccine_2",
+      "fact": "Вакцина 2 уровня: автоматическая инъекция при контакте, защита ограничена инфекцией не выше 2 уровня.",
+      "source_status": "direct",
+      "book": 3,
+      "chapter": null,
+      "evidence": "Описание браслета в книге 3."
+    },
+    {
+      "id": "cf_ocean",
+      "fact": "Пространственный океан и осколки чужих миров существуют в цикле; океан расширяется.",
+      "source_status": "direct",
+      "book": 2,
+      "chapter": null,
+      "evidence": "Упоминания пространственного океана и осколков в книгах 2–3."
+    },
+    {
+      "id": "cf_ark",
+      "fact": "Ковчеги — осколки миров со своими законами, стражами и ценой входа.",
+      "source_status": "direct",
+      "book": 2,
+      "chapter": null,
+      "evidence": "Описания ковчегов и пространственных осколков."
+    },
+    {
+      "id": "cf_techno",
+      "fact": "Позднее в цикле появляются техномир, киборги и инопланетные общества.",
+      "source_status": "direct",
+      "book": 4,
+      "chapter": null,
+      "evidence": "Описания планет, мехов и киборгов в книгах 4–8."
+    },
+    {
+      "id": "cf_admin",
+      "fact": "Администратор и Сердце мира появляются в поздних книгах; система ведёт учёт.",
+      "source_status": "direct",
+      "book": 7,
+      "chapter": null,
+      "evidence": "Упоминания Администратора, Сердца мира и счетчиков опыта."
+    },
+    {
+      "id": "cf_paris",
+      "fact": "Ранний земной контекст: Париж, Франция, больница, улицы, район Лувра и лагерь выживших.",
+      "source_status": "direct",
+      "book": 1,
+      "chapter": "1",
+      "evidence": "Пробуждение Сергея в Париже и описание лагеря у Лувра."
+    }
+  ],
+  "campaign_decisions": [
+    {
+      "id": "cd_start",
+      "decision": "Старт кампании — первый час прихода Системы в вымышленном городе Арго.",
+      "reason": "Точная дата и механизм прихода Системы исходником не установлены; дата пробуждения Сергея не подменяет начало катастрофы.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_classes",
+      "decision": "Классы открываются после первой победы; в паку 129 классов.",
+      "reason": "Универсальная формальная система классов исходником не подтверждена.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_refuge",
+      "decision": "Убежище может найти, отбить или построить любой игрок.",
+      "reason": "Навык и убежище Сергея — его уникальный контекст, не базовая возможность всех.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_body",
+      "decision": "Вместо ОВ/ОМ используются части тела, описательные состояния и постоянная смерть.",
+      "reason": "Игровое правило, специально выбранное для прозы без чисел урона.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_factions",
+      "decision": "Выжившие, мародёры, Орден, Метро и Гарнизон как отдельные фракции.",
+      "reason": "Состав и хронология книжных организаций требуют отдельной верификации; это игровая трактовка.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_cooperation",
+      "decision": "Пошаговый кооп: один приказ на игрока, реакция после всех.",
+      "reason": "Правила взаимодействия игроков в книге не формализованы.",
+      "source_status": "campaign_decision"
+    },
+    {
+      "id": "cd_moscow",
+      "decision": "Действие кампании происходит в Москве; «Арго» — имя сектора, которое дала Система.",
+      "reason": "Игроку нужна узнаваемая реальная карта и настоящие координаты мест; город из книг не задан как место кампании.",
+      "source_status": "campaign_decision"
+    }
+  ],
+  "entities": {
+    "eras": {
+      "E0": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "first_appearance": "system_arrival",
+        "available_at_campaign_start": true,
+        "evidence": "Ранняя городская сцена — игровая договорённость."
+      },
+      "E1": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "first_appearance": "early_apocalypse",
+        "available_at_campaign_start": false,
+        "evidence": "Фракции и убежища как игровая трактовка."
+      },
+      "E2": {
+        "source_status": "direct",
+        "world_scope": "spatial_fragment",
+        "first_appearance": "later",
+        "available_at_campaign_start": false,
+        "book": 2,
+        "evidence": "Пространственный океан и осколки миров в книгах 2–3."
+      },
+      "E3": {
+        "source_status": "direct",
+        "world_scope": "spatial_fragment",
+        "first_appearance": "later",
+        "available_at_campaign_start": false,
+        "book": 2,
+        "evidence": "Ковчеги и пространственные осколки."
+      },
+      "E4": {
+        "source_status": "direct",
+        "world_scope": "other_world",
+        "first_appearance": "later",
+        "available_at_campaign_start": false,
+        "book": 4,
+        "evidence": "Техномир, планеты и киборги в книгах 4–8."
+      },
+      "E5": {
+        "source_status": "direct",
+        "world_scope": "unknown",
+        "first_appearance": "later",
+        "available_at_campaign_start": false,
+        "book": 7,
+        "evidence": "Администратор и Сердце мира в поздних книгах."
+      }
+    },
+    "locations": {
+      "ocean_gate": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Врата к пространственному океану."
+      },
+      "ocean_shard": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Осколок чужой суши."
+      },
+      "ark_gate": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Вход в Ковчег."
+      },
+      "ark_hall": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Зал Ковчега."
+      },
+      "techno_gate": {
+        "source_status": "direct",
+        "book": 4,
+        "world_scope": "other_world",
+        "available_at_campaign_start": false,
+        "evidence": "Технический коридор техномира."
+      },
+      "techno_city": {
+        "source_status": "direct",
+        "book": 4,
+        "world_scope": "other_world",
+        "available_at_campaign_start": false,
+        "evidence": "Город из металла."
+      },
+      "admin_core": {
+        "source_status": "direct",
+        "book": 7,
+        "world_scope": "unknown",
+        "available_at_campaign_start": false,
+        "evidence": "Ядро Администратора."
+      },
+      "apartment": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "stairwell": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "courtyard": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "street": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "pharmacy": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "school": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "hospital": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "shelter_anchor": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "warehouse_anchor": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "forest_anchor": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "forest": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "road": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "gas_station": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "paveletsky": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "kremlin": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "arbat": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "refuge_core": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": false,
+        "evidence": "Московская точка кампании; координаты реальные, названия привязаны к району."
+      },
+      "paris_outskirts": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": false,
+        "evidence": "Окраина за МКАД как игровая граница ранней карты."
+      }
+    },
+    "items": {
+      "ark_key": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Ключи и доступ к Ковчегам."
+      },
+      "admin_key": {
+        "source_status": "direct",
+        "book": 7,
+        "world_scope": "unknown",
+        "available_at_campaign_start": false,
+        "evidence": "Предметы, связанные с Администратором."
+      },
+      "bandage": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Бинт как стартовый расходник."
+      }
+    },
+    "mobs": {
+      "ocean_leech": {
+        "source_status": "inference",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Существа океана; конкретный вид не подтверждён."
+      },
+      "ark_guardian": {
+        "source_status": "direct",
+        "book": 2,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Стражи Ковчега."
+      },
+      "ark_beast": {
+        "source_status": "inference",
+        "book": 3,
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Твари из осколков."
+      },
+      "administrator_avatar": {
+        "source_status": "direct",
+        "book": 7,
+        "world_scope": "unknown",
+        "available_at_campaign_start": false,
+        "evidence": "Аватар Администратора."
+      }
+    },
+    "factions": {
+      "survivors": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Игровая трактовка лагеря выживших."
+      },
+      "raiders": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": true,
+        "evidence": "Игровая фракция мародёров."
+      },
+      "order": {
+        "source_status": "campaign_decision",
+        "world_scope": "earth",
+        "available_at_campaign_start": false,
+        "evidence": "Игровая трактовка Ордена."
+      },
+      "ocean": {
+        "source_status": "campaign_decision",
+        "world_scope": "spatial_fragment",
+        "available_at_campaign_start": false,
+        "evidence": "Игровая фракция странников осколков."
+      },
+      "techno": {
+        "source_status": "campaign_decision",
+        "world_scope": "other_world",
+        "available_at_campaign_start": false,
+        "evidence": "Игровая фракция техномира."
+      }
+    }
+  }
+}

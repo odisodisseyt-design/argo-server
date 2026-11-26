@@ -1,0 +1,214 @@
+{
+  "bandage": {
+    "id": "bandage",
+    "name": "Бинт",
+    "era": "E0",
+    "station": "any",
+    "time_min": 10,
+    "inputs": [
+      {
+        "item": "clothes",
+        "qty": 1
+      },
+      {
+        "item": "antiseptic",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "bandage",
+        "qty": 2
+      }
+    ],
+    "xp": 2
+  },
+  "torch": {
+    "id": "torch",
+    "name": "Факел",
+    "era": "E0",
+    "station": "any",
+    "time_min": 10,
+    "inputs": [
+      {
+        "item": "firewood",
+        "qty": 1
+      },
+      {
+        "item": "clothes",
+        "qty": 1
+      },
+      {
+        "item": "oil",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "candle",
+        "qty": 2
+      }
+    ],
+    "xp": 2
+  },
+  "water_filter": {
+    "id": "water_filter",
+    "name": "Фильтр для воды",
+    "era": "E0",
+    "station": "any",
+    "time_min": 30,
+    "inputs": [
+      {
+        "item": "empty_bottle",
+        "qty": 1
+      },
+      {
+        "item": "coal",
+        "qty": 1
+      },
+      {
+        "item": "sandbag",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "water_filter",
+        "qty": 1
+      }
+    ],
+    "xp": 5
+  },
+  "barricade": {
+    "id": "barricade",
+    "name": "Баррикада",
+    "era": "E0",
+    "station": "any",
+    "time_min": 40,
+    "inputs": [
+      {
+        "item": "lumber",
+        "qty": 4
+      },
+      {
+        "item": "nails",
+        "qty": 10
+      },
+      {
+        "item": "hammer",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "sandbag",
+        "qty": 2
+      }
+    ],
+    "xp": 6
+  },
+  "trap_wire": {
+    "id": "trap_wire",
+    "name": "Проволочная ловушка",
+    "era": "E0",
+    "station": "any",
+    "time_min": 20,
+    "inputs": [
+      {
+        "item": "wire",
+        "qty": 1
+      },
+      {
+        "item": "lumber",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "net",
+        "qty": 1
+      }
+    ],
+    "xp": 4
+  },
+  "splint": {
+    "id": "splint",
+    "name": "Шина",
+    "era": "E0",
+    "station": "any",
+    "time_min": 10,
+    "inputs": [
+      {
+        "item": "lumber",
+        "qty": 1
+      },
+      {
+        "item": "bandage",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "splint",
+        "qty": 1
+      }
+    ],
+    "xp": 2
+  },
+  "molotov": {
+    "id": "molotov",
+    "name": "Зажигательная бутылка",
+    "era": "E0",
+    "station": "any",
+    "time_min": 10,
+    "inputs": [
+      {
+        "item": "empty_bottle",
+        "qty": 1
+      },
+      {
+        "item": "oil",
+        "qty": 1
+      },
+      {
+        "item": "clothes",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "molotov",
+        "qty": 1
+      }
+    ],
+    "xp": 3
+  },
+  "scrap_tool": {
+    "id": "scrap_tool",
+    "name": "Самодельный инструмент",
+    "era": "E0",
+    "station": "any",
+    "time_min": 30,
+    "inputs": [
+      {
+        "item": "metal_sheet",
+        "qty": 1
+      },
+      {
+        "item": "wire",
+        "qty": 1
+      },
+      {
+        "item": "duct_tape",
+        "qty": 1
+      }
+    ],
+    "output": [
+      {
+        "item": "scrap_tool",
+        "qty": 1
+      }
+    ],
+    "xp": 4
+  }
+}

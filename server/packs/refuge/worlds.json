@@ -1,0 +1,1717 @@
+{
+  "locations": {
+    "apartment": {
+      "id": "apartment",
+      "name": "Квартира в Чертанове",
+      "era": "E0",
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "biome": "urban",
+      "danger": 1,
+      "desc": "Тесная квартира на четвёртом этаже панельного дома. За окном — двор Чертанова и серый дым над Варшавским шоссе. На столе остывший чай, на стекле — след чужой ладони.",
+      "exits": [
+        {
+          "to": "stairwell",
+          "via": "дверь"
+        }
+      ],
+      "objects": [
+        {
+          "id": "window",
+          "name": "Окно",
+          "aliases": [
+            "окно",
+            "подоконник"
+          ],
+          "affordances": [
+            "посмотреть",
+            "открыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "door",
+          "name": "Входная дверь",
+          "aliases": [
+            "дверь",
+            "выход"
+          ],
+          "affordances": [
+            "открыть",
+            "забаррикадировать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "table_home",
+          "name": "Стол",
+          "aliases": [
+            "стол"
+          ],
+          "affordances": [
+            "осмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "radio_home",
+          "name": "Радио",
+          "aliases": [
+            "радио",
+            "приёмник"
+          ],
+          "affordances": [
+            "включить",
+            "слушать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "laptop_home",
+          "name": "Ноутбук",
+          "aliases": [
+            "ноутбук",
+            "компьютер"
+          ],
+          "affordances": [
+            "открыть",
+            "посмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "backpack_home",
+          "name": "Рюкзак",
+          "aliases": [
+            "рюкзак",
+            "сумка"
+          ],
+          "affordances": [
+            "взять",
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 1
+      },
+      "loot_table": "apartment",
+      "visited": false,
+      "start": true,
+      "district": "Чертаново Северное",
+      "lat": 55.632,
+      "lon": 37.608
+    },
+    "stairwell": {
+      "id": "stairwell",
+      "name": "Подъезд",
+      "era": "E0",
+      "coords": [
+        0,
+        -1,
+        0
+      ],
+      "biome": "urban",
+      "danger": 2,
+      "desc": "Лестничная клетка панельного дома. Почтовые ящики перекошены, на ступенях — следы, будто кто-то волочил ногу.",
+      "exits": [
+        {
+          "to": "apartment",
+          "via": "квартира"
+        },
+        {
+          "to": "courtyard",
+          "via": "улица"
+        }
+      ],
+      "objects": [
+        {
+          "id": "mailboxes",
+          "name": "Почтовые ящики",
+          "aliases": [
+            "ящики",
+            "почта"
+          ],
+          "affordances": [
+            "осмотреть",
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "stairs",
+          "name": "Лестница",
+          "aliases": [
+            "лестница",
+            "ступени"
+          ],
+          "affordances": [
+            "подняться",
+            "спуститься"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 1,
+        "rat_giant": 1
+      },
+      "loot_table": "street",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.6321,
+      "lon": 37.6083
+    },
+    "courtyard": {
+      "id": "courtyard",
+      "name": "Двор на Красного Маяка",
+      "era": "E0",
+      "coords": [
+        0,
+        -2,
+        0
+      ],
+      "biome": "urban",
+      "danger": 2,
+      "desc": "Тесный двор между панельными домами. Качели скрипят на ветру, у подъездов брошены детские санки.",
+      "exits": [
+        {
+          "to": "stairwell",
+          "via": "подъезд"
+        },
+        {
+          "to": "street",
+          "via": "арка"
+        }
+      ],
+      "objects": [
+        {
+          "id": "dumpster",
+          "name": "Мусорный контейнер",
+          "aliases": [
+            "контейнер",
+            "мусорка",
+            "бак"
+          ],
+          "affordances": [
+            "обыскать",
+            "открыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "swings",
+          "name": "Качели",
+          "aliases": [
+            "качели"
+          ],
+          "affordances": [
+            "осмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "car_wreck",
+          "name": "Разбитая машина",
+          "aliases": [
+            "машина",
+            "автомобиль"
+          ],
+          "affordances": [
+            "обыскать",
+            "открыть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 2,
+        "infected_dog": 1
+      },
+      "loot_table": "street",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.6324,
+      "lon": 37.609
+    },
+    "street": {
+      "id": "street",
+      "name": "Варшавское шоссе",
+      "era": "E0",
+      "coords": [
+        1,
+        -2,
+        0
+      ],
+      "biome": "urban",
+      "danger": 3,
+      "desc": "Широкая магистраль уходит на север, к центру. Пробка из брошенных машин, выбитые витрины, на асфальте — брошенный автобус.",
+      "exits": [
+        {
+          "to": "courtyard",
+          "via": "двор"
+        },
+        {
+          "to": "pharmacy",
+          "via": "аптека"
+        },
+        {
+          "to": "school",
+          "via": "школа"
+        },
+        {
+          "to": "hospital",
+          "via": "больница"
+        },
+        {
+          "to": "road",
+          "via": "дорога"
+        },
+        {
+          "to": "paveletsky",
+          "via": "шоссе на север"
+        }
+      ],
+      "objects": [
+        {
+          "id": "bus",
+          "name": "Автобус",
+          "aliases": [
+            "автобус"
+          ],
+          "affordances": [
+            "обыскать",
+            "войти"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "shop_window",
+          "name": "Витрина",
+          "aliases": [
+            "витрина",
+            "магазин"
+          ],
+          "affordances": [
+            "обыскать",
+            "посмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "body",
+          "name": "Тело на асфальте",
+          "aliases": [
+            "тело",
+            "труп"
+          ],
+          "affordances": [
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 3,
+        "looter": 1
+      },
+      "loot_table": "street",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.633,
+      "lon": 37.611
+    },
+    "pharmacy": {
+      "id": "pharmacy",
+      "name": "Аптека на Варшавском",
+      "era": "E0",
+      "coords": [
+        1,
+        -1,
+        0
+      ],
+      "biome": "urban",
+      "danger": 2,
+      "desc": "Аптека в первом этаже жилого дома. Полки перевёрнуты, но за прилавком ещё пахнет спиртом и бумагой.",
+      "exits": [
+        {
+          "to": "street",
+          "via": "улица"
+        }
+      ],
+      "objects": [
+        {
+          "id": "shelves",
+          "name": "Стеллажи",
+          "aliases": [
+            "полки",
+            "стеллажи"
+          ],
+          "affordances": [
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "counter",
+          "name": "Прилавок",
+          "aliases": [
+            "прилавок",
+            "касса"
+          ],
+          "affordances": [
+            "обыскать",
+            "открыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "fridge_med",
+          "name": "Медицинский холодильник",
+          "aliases": [
+            "холодильник"
+          ],
+          "affordances": [
+            "открыть",
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 1,
+        "rat_giant": 2
+      },
+      "loot_table": "pharmacy",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.635,
+      "lon": 37.613
+    },
+    "school": {
+      "id": "school",
+      "name": "Школа на Чертановской",
+      "era": "E0",
+      "coords": [
+        2,
+        -1,
+        0
+      ],
+      "biome": "urban",
+      "danger": 3,
+      "desc": "Школа с пустым двором и распахнутыми дверями. На стене — детский рисунок, на котором солнце закрыто чёрным кругом.",
+      "exits": [
+        {
+          "to": "street",
+          "via": "улица"
+        }
+      ],
+      "objects": [
+        {
+          "id": "classroom",
+          "name": "Класс",
+          "aliases": [
+            "класс",
+            "кабинет"
+          ],
+          "affordances": [
+            "войти",
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "lockers",
+          "name": "Шкафчики",
+          "aliases": [
+            "шкафчики",
+            "локеры"
+          ],
+          "affordances": [
+            "открыть",
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "gym",
+          "name": "Спортзал",
+          "aliases": [
+            "спортзал",
+            "зал"
+          ],
+          "affordances": [
+            "войти",
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 2,
+        "zombie_fast": 1
+      },
+      "loot_table": "school",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.637,
+      "lon": 37.615
+    },
+    "hospital": {
+      "id": "hospital",
+      "name": "Городская больница",
+      "era": "E0",
+      "coords": [
+        2,
+        0,
+        0
+      ],
+      "biome": "urban",
+      "danger": 4,
+      "desc": "Корпус городской больницы. Окна выбиты, в коридорах горит аварийный свет, у входа — брошенная каталка.",
+      "exits": [
+        {
+          "to": "street",
+          "via": "улица"
+        },
+        {
+          "to": "shelter_anchor",
+          "via": "подвал"
+        }
+      ],
+      "objects": [
+        {
+          "id": "reception",
+          "name": "Стойка регистрации",
+          "aliases": [
+            "стойка",
+            "регистратура"
+          ],
+          "affordances": [
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "operating",
+          "name": "Операционная",
+          "aliases": [
+            "операционная"
+          ],
+          "affordances": [
+            "войти",
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "basement_door",
+          "name": "Дверь в подвал",
+          "aliases": [
+            "подвал",
+            "дверь в подвал"
+          ],
+          "affordances": [
+            "открыть",
+            "спуститься"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 3,
+        "zombie_brute": 1
+      },
+      "loot_table": "hospital",
+      "visited": false,
+      "district": "Чертаново Северное",
+      "lat": 55.639,
+      "lon": 37.617
+    },
+    "shelter_anchor": {
+      "id": "shelter_anchor",
+      "name": "Бомбоубежище под больницей",
+      "era": "E0",
+      "coords": [
+        2,
+        1,
+        -3
+      ],
+      "biome": "underground",
+      "danger": 3,
+      "desc": "Тяжёлая дверь в подвале больницы. За ней — бетон, фильтры и запас воды, которого хватит ненадолго.",
+      "exits": [
+        {
+          "to": "hospital",
+          "via": "лестница"
+        }
+      ],
+      "objects": [
+        {
+          "id": "blast_door",
+          "name": "Гермодверь",
+          "aliases": [
+            "дверь",
+            "гермодверь"
+          ],
+          "affordances": [
+            "открыть",
+            "осмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "vent",
+          "name": "Вентиляция",
+          "aliases": [
+            "вентиляция",
+            "шахта"
+          ],
+          "affordances": [
+            "осмотреть",
+            "починить"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "anchor_mark",
+          "name": "Метка Системы",
+          "aliases": [
+            "метка",
+            "знак"
+          ],
+          "affordances": [
+            "коснуться",
+            "активировать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 1
+      },
+      "loot_table": "hospital",
+      "visited": false,
+      "refuge_anchor": {
+        "type": "found",
+        "name": "Бомбоубежище",
+        "level": 1
+      },
+      "district": "Чертаново Северное",
+      "lat": 55.6392,
+      "lon": 37.6172
+    },
+    "warehouse_anchor": {
+      "id": "warehouse_anchor",
+      "name": "Склад у железной дороги",
+      "era": "E0",
+      "coords": [
+        -2,
+        -3,
+        0
+      ],
+      "biome": "industrial",
+      "danger": 4,
+      "desc": "Заброшенный склад у путей Павелецкого направления. Ворота приоткрыты, внутри темно и пахнет машинным маслом.",
+      "exits": [
+        {
+          "to": "street",
+          "via": "улица"
+        }
+      ],
+      "objects": [
+        {
+          "id": "gate_warehouse",
+          "name": "Ворота",
+          "aliases": [
+            "ворота"
+          ],
+          "affordances": [
+            "открыть",
+            "закрыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "crates",
+          "name": "Ящики",
+          "aliases": [
+            "ящики",
+            "коробки"
+          ],
+          "affordances": [
+            "обыскать",
+            "открыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "anchor_mark",
+          "name": "Метка Системы",
+          "aliases": [
+            "метка",
+            "знак"
+          ],
+          "affordances": [
+            "коснуться",
+            "активировать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "looter": 2,
+        "zombie": 1
+      },
+      "loot_table": "warehouse",
+      "visited": false,
+      "refuge_anchor": {
+        "type": "captured",
+        "name": "Склад",
+        "level": 1
+      },
+      "district": "Чертаново Южное",
+      "lat": 55.628,
+      "lon": 37.6
+    },
+    "forest_anchor": {
+      "id": "forest_anchor",
+      "name": "Битцевский лес",
+      "era": "E0",
+      "coords": [
+        -3,
+        -4,
+        0
+      ],
+      "biome": "forest",
+      "danger": 2,
+      "desc": "Опушка Битцевского леса. Город остаётся за спиной, впереди — мокрая листва и тишина, в которой слишком хорошо слышны шаги.",
+      "exits": [
+        {
+          "to": "forest",
+          "via": "тропа"
+        }
+      ],
+      "objects": [
+        {
+          "id": "spring",
+          "name": "Ручей",
+          "aliases": [
+            "ручей",
+            "вода"
+          ],
+          "affordances": [
+            "набрать воды",
+            "осмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "anchor_mark",
+          "name": "Метка Системы",
+          "aliases": [
+            "метка",
+            "знак"
+          ],
+          "affordances": [
+            "коснуться",
+            "активировать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "old_stump",
+          "name": "Старый пень",
+          "aliases": [
+            "пень"
+          ],
+          "affordances": [
+            "осмотреть",
+            "сесть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "infected_dog": 1
+      },
+      "loot_table": "forest",
+      "visited": false,
+      "refuge_anchor": {
+        "type": "built",
+        "name": "Поляна",
+        "level": 1
+      },
+      "district": "Ясенево",
+      "lat": 55.622,
+      "lon": 37.585
+    },
+    "forest": {
+      "id": "forest",
+      "name": "Глубина Битцевского леса",
+      "era": "E0",
+      "coords": [
+        -4,
+        -4,
+        0
+      ],
+      "biome": "forest",
+      "danger": 2,
+      "desc": "Лесная глубина. Тропа теряется между стволами, на ветках висят обрывки ткани, будто кто-то уходил отсюда в спешке.",
+      "exits": [
+        {
+          "to": "forest_anchor",
+          "via": "поляна"
+        },
+        {
+          "to": "road",
+          "via": "дорога"
+        }
+      ],
+      "objects": [
+        {
+          "id": "trees",
+          "name": "Деревья",
+          "aliases": [
+            "деревья",
+            "сосны"
+          ],
+          "affordances": [
+            "осмотреть",
+            "срубить"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "stream",
+          "name": "Ручей",
+          "aliases": [
+            "ручей",
+            "вода"
+          ],
+          "affordances": [
+            "набрать воды"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "animal_trail",
+          "name": "Звериная тропа",
+          "aliases": [
+            "тропа",
+            "следы"
+          ],
+          "affordances": [
+            "пройти",
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "infected_dog": 2,
+        "rat_giant": 1
+      },
+      "loot_table": "forest",
+      "visited": false,
+      "district": "Ясенево",
+      "lat": 55.618,
+      "lon": 37.58
+    },
+    "road": {
+      "id": "road",
+      "name": "Дорога вдоль Битцевского леса",
+      "era": "E0",
+      "coords": [
+        0,
+        -5,
+        0
+      ],
+      "biome": "road",
+      "danger": 3,
+      "desc": "Асфальтовая дорога между лесом и железной дорогой. По обочинам — брошенные машины и следы шин, уходящие к МКАД.",
+      "exits": [
+        {
+          "to": "street",
+          "via": "город"
+        },
+        {
+          "to": "forest",
+          "via": "лес"
+        },
+        {
+          "to": "gas_station",
+          "via": "заправка"
+        },
+        {
+          "to": "paveletsky",
+          "via": "шоссе"
+        }
+      ],
+      "objects": [
+        {
+          "id": "cars",
+          "name": "Машины",
+          "aliases": [
+            "машины",
+            "автомобили"
+          ],
+          "affordances": [
+            "обыскать",
+            "открыть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "sign",
+          "name": "Дорожный знак",
+          "aliases": [
+            "знак",
+            "указатель"
+          ],
+          "affordances": [
+            "посмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "barricade_road",
+          "name": "Баррикада",
+          "aliases": [
+            "баррикада"
+          ],
+          "affordances": [
+            "осмотреть",
+            "разобрать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 2,
+        "looter": 1
+      },
+      "loot_table": "street",
+      "visited": false,
+      "district": "Чертаново Южное",
+      "lat": 55.625,
+      "lon": 37.6
+    },
+    "gas_station": {
+      "id": "gas_station",
+      "name": "Заправка у МКАД",
+      "era": "E0",
+      "coords": [
+        1,
+        -6,
+        0
+      ],
+      "biome": "road",
+      "danger": 3,
+      "desc": "Заправка с погасшими колонками. На стекле — следы ладоней, на бетоне — тёмные пятна, которые никто не пытался смыть.",
+      "exits": [
+        {
+          "to": "road",
+          "via": "дорога"
+        },
+        {
+          "to": "paris_outskirts",
+          "via": "трасса"
+        }
+      ],
+      "objects": [
+        {
+          "id": "pumps",
+          "name": "Колонки",
+          "aliases": [
+            "колонки",
+            "бензин"
+          ],
+          "affordances": [
+            "открыть",
+            "слить топливо"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "kiosk",
+          "name": "Киоск",
+          "aliases": [
+            "киоск",
+            "магазин"
+          ],
+          "affordances": [
+            "обыскать",
+            "войти"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "cash_register",
+          "name": "Касса",
+          "aliases": [
+            "касса"
+          ],
+          "affordances": [
+            "открыть",
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 1,
+        "looter": 1
+      },
+      "loot_table": "gas_station",
+      "visited": false,
+      "district": "Чертаново Южное",
+      "lat": 55.618,
+      "lon": 37.597
+    },
+    "paris_outskirts": {
+      "id": "paris_outskirts",
+      "name": "Окраина за МКАД",
+      "era": "E1",
+      "coords": [
+        3,
+        -8,
+        0
+      ],
+      "biome": "urban",
+      "danger": 4,
+      "desc": "За кольцевой дорогой дома обрываются. Дальше — пустое шоссе, лесополоса и тишина, в которой не слышно ни птиц, ни машин.",
+      "exits": [
+        {
+          "to": "gas_station",
+          "via": "трасса"
+        },
+        {
+          "to": "ocean_gate",
+          "via": "портал"
+        }
+      ],
+      "objects": [
+        {
+          "id": "last_house",
+          "name": "Последний дом",
+          "aliases": [
+            "дом"
+          ],
+          "affordances": [
+            "войти",
+            "обыскать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "ocean_mark",
+          "name": "Знак у воды",
+          "aliases": [
+            "знак",
+            "метка"
+          ],
+          "affordances": [
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "raider": 1,
+        "mutant_dog": 1
+      },
+      "loot_table": "street",
+      "visited": false,
+      "requires": {
+        "era": "E1"
+      },
+      "district": "За МКАД",
+      "lat": 55.604,
+      "lon": 37.592
+    },
+    "ocean_gate": {
+      "id": "ocean_gate",
+      "name": "Врата в океан",
+      "era": "E2",
+      "coords": [
+        4,
+        -10,
+        0
+      ],
+      "biome": "ocean",
+      "danger": 6,
+      "desc": "За бетонным блокпостом стоит стена воды. Она не падает и не шумит.",
+      "exits": [
+        {
+          "to": "paris_outskirts",
+          "via": "берег"
+        },
+        {
+          "to": "ocean_shard",
+          "via": "вода"
+        }
+      ],
+      "objects": [
+        {
+          "id": "water_wall",
+          "name": "Стена воды",
+          "aliases": [
+            "вода",
+            "стена"
+          ],
+          "affordances": [
+            "войти",
+            "коснуться"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "gate_frame",
+          "name": "Рама врат",
+          "aliases": [
+            "рама",
+            "врата"
+          ],
+          "affordances": [
+            "осмотреть",
+            "активировать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "ocean_leech": 1
+      },
+      "loot_table": "ocean",
+      "visited": false,
+      "requires": {
+        "era": "E2"
+      },
+      "district": "За Кольцом",
+      "lat": 55.59,
+      "lon": 37.55
+    },
+    "ocean_shard": {
+      "id": "ocean_shard",
+      "name": "Осколок мира",
+      "era": "E2",
+      "coords": [
+        6,
+        -12,
+        0
+      ],
+      "biome": "ocean",
+      "danger": 7,
+      "desc": "Кусок чужой суши в стоячей воде. На нём растёт трава, которой не должно быть здесь.",
+      "exits": [
+        {
+          "to": "ocean_gate",
+          "via": "вода"
+        }
+      ],
+      "objects": [
+        {
+          "id": "shard_core",
+          "name": "Сердце осколка",
+          "aliases": [
+            "сердце",
+            "кристалл"
+          ],
+          "affordances": [
+            "коснуться",
+            "взять"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "wreck",
+          "name": "Обломок",
+          "aliases": [
+            "обломок",
+            "корабль"
+          ],
+          "affordances": [
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "shard_wraith": 1
+      },
+      "loot_table": "ocean",
+      "visited": false,
+      "requires": {
+        "era": "E2"
+      },
+      "district": "За Кольцом",
+      "lat": 55.58,
+      "lon": 37.535
+    },
+    "ark_gate": {
+      "id": "ark_gate",
+      "name": "Вход в Ковчег",
+      "era": "E3",
+      "coords": [
+        8,
+        -14,
+        0
+      ],
+      "biome": "ark",
+      "danger": 8,
+      "desc": "Борт Ковчега выше домов. Вход открыт, внутри горит ровный свет.",
+      "exits": [
+        {
+          "to": "ocean_shard",
+          "via": "вода"
+        },
+        {
+          "to": "ark_hall",
+          "via": "вход"
+        }
+      ],
+      "objects": [
+        {
+          "id": "ark_door",
+          "name": "Дверь Ковчега",
+          "aliases": [
+            "дверь",
+            "вход"
+          ],
+          "affordances": [
+            "войти",
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "ark_guardian": 1
+      },
+      "loot_table": "ark",
+      "visited": false,
+      "requires": {
+        "era": "E3"
+      },
+      "district": "За Кольцом",
+      "lat": 55.575,
+      "lon": 37.525
+    },
+    "ark_hall": {
+      "id": "ark_hall",
+      "name": "Зал Ковчега",
+      "era": "E3",
+      "coords": [
+        9,
+        -15,
+        0
+      ],
+      "biome": "ark",
+      "danger": 8,
+      "desc": "Огромный зал с колоннами. Воздух тёплый и неподвижный.",
+      "exits": [
+        {
+          "to": "ark_gate",
+          "via": "выход"
+        },
+        {
+          "to": "techno_gate",
+          "via": "технический коридор"
+        }
+      ],
+      "objects": [
+        {
+          "id": "ark_throne",
+          "name": "Трон",
+          "aliases": [
+            "трон"
+          ],
+          "affordances": [
+            "осмотреть",
+            "сесть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "ark_archive",
+          "name": "Архив",
+          "aliases": [
+            "архив",
+            "книги"
+          ],
+          "affordances": [
+            "читать",
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "ark_beast": 1
+      },
+      "loot_table": "ark",
+      "visited": false,
+      "requires": {
+        "era": "E3"
+      },
+      "district": "За Кольцом",
+      "lat": 55.573,
+      "lon": 37.52
+    },
+    "techno_gate": {
+      "id": "techno_gate",
+      "name": "Технический коридор",
+      "era": "E4",
+      "coords": [
+        10,
+        -15,
+        0
+      ],
+      "biome": "techno",
+      "danger": 9,
+      "desc": "Коридор из металла и света. Стены гудят.",
+      "exits": [
+        {
+          "to": "ark_hall",
+          "via": "Ковчег"
+        },
+        {
+          "to": "techno_city",
+          "via": "дверь"
+        }
+      ],
+      "objects": [
+        {
+          "id": "tech_door",
+          "name": "Техническая дверь",
+          "aliases": [
+            "дверь"
+          ],
+          "affordances": [
+            "открыть",
+            "взломать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "tech_drone": 1
+      },
+      "loot_table": "techno",
+      "visited": false,
+      "requires": {
+        "era": "E4"
+      },
+      "district": "За Кольцом",
+      "lat": 55.57,
+      "lon": 37.515
+    },
+    "techno_city": {
+      "id": "techno_city",
+      "name": "Техномир",
+      "era": "E4",
+      "coords": [
+        12,
+        -16,
+        0
+      ],
+      "biome": "techno",
+      "danger": 10,
+      "desc": "Город из металла. Неон, кабели, киборги и ни одного окна.",
+      "exits": [
+        {
+          "to": "techno_gate",
+          "via": "коридор"
+        },
+        {
+          "to": "admin_core",
+          "via": "лифт"
+        }
+      ],
+      "objects": [
+        {
+          "id": "terminal_tech",
+          "name": "Терминал",
+          "aliases": [
+            "терминал",
+            "экран"
+          ],
+          "affordances": [
+            "подключиться",
+            "взломать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "charger",
+          "name": "Зарядная станция",
+          "aliases": [
+            "зарядка",
+            "станция"
+          ],
+          "affordances": [
+            "использовать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "combat_android": 1
+      },
+      "loot_table": "techno",
+      "visited": false,
+      "requires": {
+        "era": "E4"
+      },
+      "district": "За Кольцом",
+      "lat": 55.565,
+      "lon": 37.505
+    },
+    "admin_core": {
+      "id": "admin_core",
+      "name": "Ядро Администратора",
+      "era": "E5",
+      "coords": [
+        14,
+        -18,
+        0
+      ],
+      "biome": "admin",
+      "danger": 12,
+      "desc": "Помещение без стен. В центре — стол и стул. На столе лежит список.",
+      "exits": [
+        {
+          "to": "techno_city",
+          "via": "лифт"
+        }
+      ],
+      "objects": [
+        {
+          "id": "admin_desk",
+          "name": "Стол Администратора",
+          "aliases": [
+            "стол",
+            "список"
+          ],
+          "affordances": [
+            "прочитать",
+            "взять"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "admin_screen",
+          "name": "Экран",
+          "aliases": [
+            "экран"
+          ],
+          "affordances": [
+            "посмотреть",
+            "коснуться"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "administrator_avatar": 1
+      },
+      "loot_table": "admin",
+      "visited": false,
+      "requires": {
+        "era": "E5"
+      },
+      "district": "За Кольцом",
+      "lat": 55.558,
+      "lon": 37.495
+    },
+    "refuge_core": {
+      "id": "refuge_core",
+      "name": "Ядро убежища",
+      "era": "E0",
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "biome": "refuge",
+      "danger": 0,
+      "desc": "Защищённое помещение под больницей. Бетон, фильтры и место, где можно перевести дух.",
+      "exits": [
+        {
+          "to": "shelter_anchor",
+          "via": "выход"
+        }
+      ],
+      "objects": [
+        {
+          "id": "terminal",
+          "name": "Системный терминал",
+          "aliases": [
+            "терминал",
+            "магазин",
+            "компьютер",
+            "экран"
+          ],
+          "affordances": [
+            "посмотреть",
+            "открыть магазин",
+            "проверить баланс"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "capsule",
+          "name": "Капсула восстановления",
+          "aliases": [
+            "капсула",
+            "лечение",
+            "восстановление"
+          ],
+          "affordances": [
+            "лечь",
+            "восстановиться",
+            "осмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "treasury",
+          "name": "Комната сокровищ",
+          "aliases": [
+            "сокровищница",
+            "хранилище",
+            "комната"
+          ],
+          "affordances": [
+            "войти",
+            "осмотреть",
+            "взять"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "workshop",
+          "name": "Мастерская",
+          "aliases": [
+            "мастерская",
+            "кузница",
+            "верстак"
+          ],
+          "affordances": [
+            "войти",
+            "создать",
+            "починить"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "refuge_gate",
+          "name": "Выход из убежища",
+          "aliases": [
+            "выход",
+            "дверь",
+            "портал",
+            "ворота"
+          ],
+          "affordances": [
+            "открыть",
+            "выйти"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {},
+      "loot_table": "apartment",
+      "visited": false,
+      "requires": {
+        "flags": [
+          "refuge_claimed"
+        ]
+      },
+      "safe": true,
+      "spatial": true,
+      "district": "Чертаново Северное",
+      "lat": 55.6392,
+      "lon": 37.6172
+    },
+    "paveletsky": {
+      "id": "paveletsky",
+      "name": "Павелецкий вокзал",
+      "era": "E0",
+      "district": "Замоскворечье",
+      "lat": 55.73,
+      "lon": 37.639,
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "biome": "urban",
+      "danger": 5,
+      "desc": "Вокзал с погасшим табло. Перрон пуст, у путей стоит брошенный поезд, а над входом всё ещё горит половина букв.",
+      "exits": [
+        {
+          "to": "road",
+          "via": "шоссе"
+        },
+        {
+          "to": "kremlin",
+          "via": "центр"
+        }
+      ],
+      "objects": [
+        {
+          "id": "board",
+          "name": "Табло",
+          "aliases": [
+            "табло",
+            "расписание"
+          ],
+          "affordances": [
+            "посмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "train",
+          "name": "Брошенный поезд",
+          "aliases": [
+            "поезд",
+            "вагон"
+          ],
+          "affordances": [
+            "войти",
+            "обыскать"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 2,
+        "looter": 1
+      },
+      "loot_table": "street",
+      "visited": false
+    },
+    "kremlin": {
+      "id": "kremlin",
+      "name": "Красная площадь",
+      "era": "E0",
+      "district": "Тверской",
+      "lat": 55.7539,
+      "lon": 37.6208,
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "biome": "urban",
+      "danger": 6,
+      "desc": "Площадь перед Кремлём. Брусчатка пуста, куранты стоят, а над стенами висит дым без ветра.",
+      "exits": [
+        {
+          "to": "paveletsky",
+          "via": "Павелецкий вокзал"
+        },
+        {
+          "to": "arbat",
+          "via": "Александровский сад"
+        }
+      ],
+      "objects": [
+        {
+          "id": "clock",
+          "name": "Куранты",
+          "aliases": [
+            "куранты",
+            "часы"
+          ],
+          "affordances": [
+            "посмотреть",
+            "слушать"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "wall",
+          "name": "Кремлёвская стена",
+          "aliases": [
+            "стена",
+            "кремль"
+          ],
+          "affordances": [
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 3,
+        "zombie_fast": 1
+      },
+      "loot_table": "street",
+      "visited": false
+    },
+    "arbat": {
+      "id": "arbat",
+      "name": "Арбат",
+      "era": "E0",
+      "district": "Арбат",
+      "lat": 55.749,
+      "lon": 37.593,
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "biome": "urban",
+      "danger": 5,
+      "desc": "Пешеходная улица с выбитыми витринами. Фонари погасли, но мостовая ещё хранит тепло прошедшего дня.",
+      "exits": [
+        {
+          "to": "kremlin",
+          "via": "Александровский сад"
+        }
+      ],
+      "objects": [
+        {
+          "id": "shopfront",
+          "name": "Витрина",
+          "aliases": [
+            "витрина",
+            "магазин"
+          ],
+          "affordances": [
+            "обыскать",
+            "посмотреть"
+          ],
+          "forbidden": []
+        },
+        {
+          "id": "bench",
+          "name": "Скамейка",
+          "aliases": [
+            "скамейка",
+            "скамья"
+          ],
+          "affordances": [
+            "сесть",
+            "осмотреть"
+          ],
+          "forbidden": []
+        }
+      ],
+      "population": {
+        "zombie": 2,
+        "looter": 1
+      },
+      "loot_table": "street",
+      "visited": false
+    }
+  }
+}

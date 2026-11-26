@@ -1,0 +1,1332 @@
+{
+  "skills": {
+    "sig_brawler": {
+      "id": "sig_brawler",
+      "name": "Железный кулак",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Железный кулак. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "melee_power": {
+      "id": "melee_power",
+      "name": "Силовой удар",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Силовой удар. Общий навык направления «Ближний бой»."
+    },
+    "melee_guard": {
+      "id": "melee_guard",
+      "name": "Глухая защита",
+      "attribute": "end",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Глухая защита. Общий навык направления «Ближний бой»."
+    },
+    "sig_street_fighter": {
+      "id": "sig_street_fighter",
+      "name": "Грязный приём",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Грязный приём. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "melee_feint": {
+      "id": "melee_feint",
+      "name": "Обманный замах",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Обманный замах. Общий навык направления «Ближний бой»."
+    },
+    "sig_batter": {
+      "id": "sig_batter",
+      "name": "Размах",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Размах. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_knifeman": {
+      "id": "sig_knifeman",
+      "name": "Режущий удар",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Режущий удар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_axeman": {
+      "id": "sig_axeman",
+      "name": "Раскол",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Раскол. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_spearman": {
+      "id": "sig_spearman",
+      "name": "Укол",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Укол. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_shieldman": {
+      "id": "sig_shieldman",
+      "name": "Стена щита",
+      "attribute": "end",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Стена щита. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_berserker": {
+      "id": "sig_berserker",
+      "name": "Ярость",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Ярость. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_duelist": {
+      "id": "sig_duelist",
+      "name": "Выпад",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Выпад. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_bodyguard": {
+      "id": "sig_bodyguard",
+      "name": "Перехват",
+      "attribute": "end",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Перехват. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_wrestler": {
+      "id": "sig_wrestler",
+      "name": "Захват",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Захват. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_hammerer": {
+      "id": "sig_hammerer",
+      "name": "Дробящий удар",
+      "attribute": "str",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Дробящий удар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_swordsman": {
+      "id": "sig_swordsman",
+      "name": "Секущий удар",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Секущий удар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_polearm_master": {
+      "id": "sig_polearm_master",
+      "name": "Круговой удар",
+      "attribute": "agi",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Круговой удар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_trench_fighter": {
+      "id": "sig_trench_fighter",
+      "name": "Ближний бой",
+      "attribute": "end",
+      "category": "Ближний бой",
+      "max_level": 5,
+      "desc": "Ближний бой. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_archer": {
+      "id": "sig_archer",
+      "name": "Натянутая тетива",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Натянутая тетива. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "range_aim": {
+      "id": "range_aim",
+      "name": "Точный выстрел",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Точный выстрел. Общий навык направления «Дальний бой»."
+    },
+    "range_track": {
+      "id": "range_track",
+      "name": "Ведение цели",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Ведение цели. Общий навык направления «Дальний бой»."
+    },
+    "sig_crossbowman": {
+      "id": "sig_crossbowman",
+      "name": "Тяжёлый болт",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Тяжёлый болт. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "range_quick": {
+      "id": "range_quick",
+      "name": "Быстрый выстрел",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Быстрый выстрел. Общий навык направления «Дальний бой»."
+    },
+    "sig_slinger": {
+      "id": "sig_slinger",
+      "name": "Круговой бросок",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Круговой бросок. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_thrower": {
+      "id": "sig_thrower",
+      "name": "Точный бросок",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Точный бросок. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_hunter": {
+      "id": "sig_hunter",
+      "name": "Охотничий выстрел",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Охотничий выстрел. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_trapper": {
+      "id": "sig_trapper",
+      "name": "Ловушка",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Ловушка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_marksman": {
+      "id": "sig_marksman",
+      "name": "Выверенный выстрел",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Выверенный выстрел. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_sniper": {
+      "id": "sig_sniper",
+      "name": "Дальний выстрел",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Дальний выстрел. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_stone_thrower": {
+      "id": "sig_stone_thrower",
+      "name": "Каменный град",
+      "attribute": "str",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Каменный град. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_javelinier": {
+      "id": "sig_javelinier",
+      "name": "Метание дротика",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Метание дротика. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_bolasman": {
+      "id": "sig_bolasman",
+      "name": "Опутывающий бросок",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Опутывающий бросок. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_netcaster": {
+      "id": "sig_netcaster",
+      "name": "Сеть",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Сеть. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_blowgunner": {
+      "id": "sig_blowgunner",
+      "name": "Отравленный дротик",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Отравленный дротик. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_firebomber": {
+      "id": "sig_firebomber",
+      "name": "Зажигательная смесь",
+      "attribute": "agi",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Зажигательная смесь. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_spotter": {
+      "id": "sig_spotter",
+      "name": "Наводка",
+      "attribute": "mag",
+      "category": "Дальний бой",
+      "max_level": 5,
+      "desc": "Наводка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_survivor": {
+      "id": "sig_survivor",
+      "name": "Второе дыхание",
+      "attribute": "end",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Второе дыхание. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "surv_forage": {
+      "id": "surv_forage",
+      "name": "Собирательство",
+      "attribute": "vit",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Собирательство. Общий навык направления «Выживание»."
+    },
+    "surv_track": {
+      "id": "surv_track",
+      "name": "Следопытство",
+      "attribute": "agi",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Следопытство. Общий навык направления «Выживание»."
+    },
+    "sig_forager": {
+      "id": "sig_forager",
+      "name": "Съедобное рядом",
+      "attribute": "vit",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Съедобное рядом. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "surv_weather": {
+      "id": "surv_weather",
+      "name": "Чутьё погоды",
+      "attribute": "end",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Чутьё погоды. Общий навык направления «Выживание»."
+    },
+    "sig_fisherman": {
+      "id": "sig_fisherman",
+      "name": "Терпеливая ловля",
+      "attribute": "end",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Терпеливая ловля. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_huntsman": {
+      "id": "sig_huntsman",
+      "name": "Силки",
+      "attribute": "agi",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Силки. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_scout": {
+      "id": "sig_scout",
+      "name": "Разведка",
+      "attribute": "agi",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Разведка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_pathfinder": {
+      "id": "sig_pathfinder",
+      "name": "Поиск пути",
+      "attribute": "agi",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Поиск пути. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_camper": {
+      "id": "sig_camper",
+      "name": "Лагерь",
+      "attribute": "vit",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Лагерь. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_gardener": {
+      "id": "sig_gardener",
+      "name": "Посадка",
+      "attribute": "vit",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Посадка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_cook": {
+      "id": "sig_cook",
+      "name": "Сытный обед",
+      "attribute": "vit",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Сытный обед. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_water_seeker": {
+      "id": "sig_water_seeker",
+      "name": "Поиск воды",
+      "attribute": "mag",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Поиск воды. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_weatherman": {
+      "id": "sig_weatherman",
+      "name": "Предчувствие погоды",
+      "attribute": "end",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Предчувствие погоды. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_beast_tamer": {
+      "id": "sig_beast_tamer",
+      "name": "Приручение",
+      "attribute": "mag",
+      "category": "Выживание",
+      "max_level": 5,
+      "desc": "Приручение. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_paramedic": {
+      "id": "sig_paramedic",
+      "name": "Жгут",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Жгут. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "med_first_aid": {
+      "id": "med_first_aid",
+      "name": "Первая помощь",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Первая помощь. Общий навык направления «Медицина»."
+    },
+    "med_diagnose": {
+      "id": "med_diagnose",
+      "name": "Диагностика",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Диагностика. Общий навык направления «Медицина»."
+    },
+    "sig_nurse": {
+      "id": "sig_nurse",
+      "name": "Уход",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Уход. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "med_herbs": {
+      "id": "med_herbs",
+      "name": "Травничество",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Травничество. Общий навык направления «Медицина»."
+    },
+    "sig_pharmacist": {
+      "id": "sig_pharmacist",
+      "name": "Дозировка",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Дозировка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_surgeon": {
+      "id": "sig_surgeon",
+      "name": "Операция",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Операция. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_herbalist": {
+      "id": "sig_herbalist",
+      "name": "Отвар",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Отвар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_veterinarian": {
+      "id": "sig_veterinarian",
+      "name": "Осмотр",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Осмотр. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_immunologist": {
+      "id": "sig_immunologist",
+      "name": "Иммунный ответ",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Иммунный ответ. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_psychiatrist": {
+      "id": "sig_psychiatrist",
+      "name": "Стабилизация",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Стабилизация. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_bioengineer": {
+      "id": "sig_bioengineer",
+      "name": "Биосинтез",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Биосинтез. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_plague_doctor": {
+      "id": "sig_plague_doctor",
+      "name": "Карантин",
+      "attribute": "mag",
+      "category": "Медицина",
+      "max_level": 5,
+      "desc": "Карантин. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_mason": {
+      "id": "sig_mason",
+      "name": "Кладка",
+      "attribute": "vit",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Кладка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "build_repair": {
+      "id": "build_repair",
+      "name": "Ремонт",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Ремонт. Общий навык направления «Строительство»."
+    },
+    "build_craft": {
+      "id": "build_craft",
+      "name": "Ремесло",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Ремесло. Общий навык направления «Строительство»."
+    },
+    "sig_carpenter": {
+      "id": "sig_carpenter",
+      "name": "Соединение",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Соединение. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "build_fortify": {
+      "id": "build_fortify",
+      "name": "Фортификация",
+      "attribute": "vit",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Фортификация. Общий навык направления «Строительство»."
+    },
+    "sig_welder": {
+      "id": "sig_welder",
+      "name": "Сварка",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Сварка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_electrician": {
+      "id": "sig_electrician",
+      "name": "Проводка",
+      "attribute": "mag",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Проводка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_plumber": {
+      "id": "sig_plumber",
+      "name": "Трубы",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Трубы. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_mechanic": {
+      "id": "sig_mechanic",
+      "name": "Ремонт механизма",
+      "attribute": "agi",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Ремонт механизма. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_architect": {
+      "id": "sig_architect",
+      "name": "План",
+      "attribute": "mag",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "План. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_digger": {
+      "id": "sig_digger",
+      "name": "Подкоп",
+      "attribute": "vit",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Подкоп. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_fortifier": {
+      "id": "sig_fortifier",
+      "name": "Укрепление",
+      "attribute": "vit",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Укрепление. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_engineer": {
+      "id": "sig_engineer",
+      "name": "Расчёт",
+      "attribute": "mag",
+      "category": "Строительство",
+      "max_level": 5,
+      "desc": "Расчёт. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_tinkerer": {
+      "id": "sig_tinkerer",
+      "name": "Импровизация",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Импровизация. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "tech_hack": {
+      "id": "tech_hack",
+      "name": "Взлом",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Взлом. Общий навык направления «Техника»."
+    },
+    "tech_repair": {
+      "id": "tech_repair",
+      "name": "Технический ремонт",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Технический ремонт. Общий навык направления «Техника»."
+    },
+    "sig_radio_operator": {
+      "id": "sig_radio_operator",
+      "name": "Настройка",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Настройка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "tech_signal": {
+      "id": "tech_signal",
+      "name": "Радиосвязь",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Радиосвязь. Общий навык направления «Техника»."
+    },
+    "sig_hacker": {
+      "id": "sig_hacker",
+      "name": "Взлом системы",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Взлом системы. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_drone_operator": {
+      "id": "sig_drone_operator",
+      "name": "Управление дроном",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Управление дроном. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_gunsmith": {
+      "id": "sig_gunsmith",
+      "name": "Оружейная смазка",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Оружейная смазка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_cyber_medic": {
+      "id": "sig_cyber_medic",
+      "name": "Киберпротез",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Киберпротез. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_signalman": {
+      "id": "sig_signalman",
+      "name": "Ретрансляция",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Ретрансляция. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_automaton": {
+      "id": "sig_automaton",
+      "name": "Автоматон",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Автоматон. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_energy_engineer": {
+      "id": "sig_energy_engineer",
+      "name": "Энергопоток",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Энергопоток. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_spatial_navigator": {
+      "id": "sig_spatial_navigator",
+      "name": "Прокладка курса",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Прокладка курса. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_neural_architect": {
+      "id": "sig_neural_architect",
+      "name": "Нейроканал",
+      "attribute": "mag",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Нейроканал. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_techno_smith": {
+      "id": "sig_techno_smith",
+      "name": "Техноковка",
+      "attribute": "agi",
+      "category": "Техника",
+      "max_level": 5,
+      "desc": "Техноковка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_latent": {
+      "id": "sig_latent",
+      "name": "Первый импульс",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Первый импульс. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "mag_channel": {
+      "id": "mag_channel",
+      "name": "Проведение силы",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Проведение силы. Общий навык направления «Магия»."
+    },
+    "mag_focus": {
+      "id": "mag_focus",
+      "name": "Сосредоточение",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Сосредоточение. Общий навык направления «Магия»."
+    },
+    "sig_rune_carver": {
+      "id": "sig_rune_carver",
+      "name": "Руна",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Руна. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "mag_shield": {
+      "id": "mag_shield",
+      "name": "Магический щит",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Магический щит. Общий навык направления «Магия»."
+    },
+    "sig_fire_mage": {
+      "id": "sig_fire_mage",
+      "name": "Огненный импульс",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Огненный импульс. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ice_mage": {
+      "id": "sig_ice_mage",
+      "name": "Ледяной шип",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Ледяной шип. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_lightning_mage": {
+      "id": "sig_lightning_mage",
+      "name": "Разряд",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Разряд. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_healer_mage": {
+      "id": "sig_healer_mage",
+      "name": "Исцеление",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Исцеление. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_shield_mage": {
+      "id": "sig_shield_mage",
+      "name": "Барьер",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Барьер. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_wind_mage": {
+      "id": "sig_wind_mage",
+      "name": "Порыв",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Порыв. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_earth_mage": {
+      "id": "sig_earth_mage",
+      "name": "Каменный шип",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Каменный шип. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_water_mage": {
+      "id": "sig_water_mage",
+      "name": "Волна",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Волна. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_shadow_mage": {
+      "id": "sig_shadow_mage",
+      "name": "Теневая петля",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Теневая петля. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_light_mage": {
+      "id": "sig_light_mage",
+      "name": "Вспышка",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Вспышка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_spatial_mage": {
+      "id": "sig_spatial_mage",
+      "name": "Сдвиг",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Сдвиг. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_summoner": {
+      "id": "sig_summoner",
+      "name": "Зов",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Зов. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_necromancer": {
+      "id": "sig_necromancer",
+      "name": "Подъём",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Подъём. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_chronomancer": {
+      "id": "sig_chronomancer",
+      "name": "Сдвиг времени",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Сдвиг времени. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_blood_mage": {
+      "id": "sig_blood_mage",
+      "name": "Кровавый контур",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Кровавый контур. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_mage": {
+      "id": "sig_ark_mage",
+      "name": "Закон Ковчега",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Закон Ковчега. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_technomancer": {
+      "id": "sig_technomancer",
+      "name": "Технозаклинание",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Технозаклинание. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_administrator_mage": {
+      "id": "sig_administrator_mage",
+      "name": "Правка",
+      "attribute": "mag",
+      "category": "Магия",
+      "max_level": 5,
+      "desc": "Правка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_trader": {
+      "id": "sig_trader",
+      "name": "Сделка",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Сделка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "soc_trade": {
+      "id": "soc_trade",
+      "name": "Торг",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Торг. Общий навык направления «Социальное»."
+    },
+    "soc_lead": {
+      "id": "soc_lead",
+      "name": "Вести за собой",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Вести за собой. Общий навык направления «Социальное»."
+    },
+    "sig_diplomat": {
+      "id": "sig_diplomat",
+      "name": "Переговоры",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Переговоры. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "soc_talk": {
+      "id": "soc_talk",
+      "name": "Убеждение",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Убеждение. Общий навык направления «Социальное»."
+    },
+    "sig_bard": {
+      "id": "sig_bard",
+      "name": "Песня",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Песня. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_preacher": {
+      "id": "sig_preacher",
+      "name": "Слово",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Слово. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_boss": {
+      "id": "sig_boss",
+      "name": "Приказ",
+      "attribute": "end",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Приказ. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_spy": {
+      "id": "sig_spy",
+      "name": "Сбор сведений",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Сбор сведений. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_negotiator": {
+      "id": "sig_negotiator",
+      "name": "Компромисс",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Компромисс. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_faction_leader": {
+      "id": "sig_faction_leader",
+      "name": "Собрать фракцию",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Собрать фракцию. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_envoy": {
+      "id": "sig_ark_envoy",
+      "name": "Посольство",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Посольство. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_voice_of_system": {
+      "id": "sig_voice_of_system",
+      "name": "Объявление",
+      "attribute": "mag",
+      "category": "Социальное",
+      "max_level": 5,
+      "desc": "Объявление. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_thief": {
+      "id": "sig_thief",
+      "name": "Ловкие руки",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Ловкие руки. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "stl_backstab": {
+      "id": "stl_backstab",
+      "name": "Удар из тени",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Удар из тени. Общий навык направления «Скрытность»."
+    },
+    "stl_hide": {
+      "id": "stl_hide",
+      "name": "Скрытность",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Скрытность. Общий навык направления «Скрытность»."
+    },
+    "sig_burglar": {
+      "id": "sig_burglar",
+      "name": "Взлом",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Взлом. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "stl_lock": {
+      "id": "stl_lock",
+      "name": "Взлом замков",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Взлом замков. Общий навык направления «Скрытность»."
+    },
+    "sig_assassin": {
+      "id": "sig_assassin",
+      "name": "Тихий удар",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Тихий удар. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_infiltrator": {
+      "id": "sig_infiltrator",
+      "name": "Проникновение",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Проникновение. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_pickpocket": {
+      "id": "sig_pickpocket",
+      "name": "Карман",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Карман. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_saboteur": {
+      "id": "sig_saboteur",
+      "name": "Диверсия",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Диверсия. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_shadow": {
+      "id": "sig_shadow",
+      "name": "Слияние с тенью",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Слияние с тенью. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_infiltrator_pro": {
+      "id": "sig_infiltrator_pro",
+      "name": "Маска",
+      "attribute": "mag",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Маска. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ghost": {
+      "id": "sig_ghost",
+      "name": "Фазовый шаг",
+      "attribute": "agi",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Фазовый шаг. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_void_walker": {
+      "id": "sig_void_walker",
+      "name": "Шаг в пустоту",
+      "attribute": "mag",
+      "category": "Скрытность",
+      "max_level": 5,
+      "desc": "Шаг в пустоту. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ocean_pirate": {
+      "id": "sig_ocean_pirate",
+      "name": "Абордаж",
+      "attribute": "agi",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Абордаж. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "uni_adapt": {
+      "id": "uni_adapt",
+      "name": "Адаптация",
+      "attribute": "end",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Адаптация. Общий навык направления «Особые»."
+    },
+    "uni_will": {
+      "id": "uni_will",
+      "name": "Воля",
+      "attribute": "end",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Воля. Общий навык направления «Особые»."
+    },
+    "sig_shard_hunter": {
+      "id": "sig_shard_hunter",
+      "name": "Захват осколка",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Захват осколка. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "uni_sense": {
+      "id": "uni_sense",
+      "name": "Чутьё мира",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Чутьё мира. Общий навык направления «Особые»."
+    },
+    "sig_ark_scout": {
+      "id": "sig_ark_scout",
+      "name": "Разведка Ковчега",
+      "attribute": "agi",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Разведка Ковчега. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_rift_walker": {
+      "id": "sig_rift_walker",
+      "name": "Разлом",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Разлом. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_leviathan_hunter": {
+      "id": "sig_leviathan_hunter",
+      "name": "Гарпун",
+      "attribute": "str",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Гарпун. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_knight": {
+      "id": "sig_ark_knight",
+      "name": "Клятва",
+      "attribute": "end",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Клятва. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_priest": {
+      "id": "sig_ark_priest",
+      "name": "Обряд",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Обряд. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_engineer": {
+      "id": "sig_ark_engineer",
+      "name": "Ремонт Ковчега",
+      "attribute": "agi",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Ремонт Ковчега. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ark_king": {
+      "id": "sig_ark_king",
+      "name": "Приказ Ковчега",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Приказ Ковчега. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_techno_soldier": {
+      "id": "sig_techno_soldier",
+      "name": "Имплант",
+      "attribute": "str",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Имплант. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_netrunner": {
+      "id": "sig_netrunner",
+      "name": "Погружение",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Погружение. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_chrome_doctor": {
+      "id": "sig_chrome_doctor",
+      "name": "Хирургия",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Хирургия. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_ai_whisperer": {
+      "id": "sig_ai_whisperer",
+      "name": "Диалог с ИИ",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Диалог с ИИ. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_system_architect": {
+      "id": "sig_system_architect",
+      "name": "Правка правил",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Правка правил. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sig_administrator": {
+      "id": "sig_administrator",
+      "name": "Учёт",
+      "attribute": "mag",
+      "category": "Особые",
+      "max_level": 5,
+      "desc": "Учёт. Классовый навык. Растёт вместе с уровнем и опытом в бою."
+    },
+    "sense": {
+      "id": "sense",
+      "name": "Чутьё",
+      "attribute": "mag",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Чутьё. Базовый навык, доступный любому выжившему."
+    },
+    "refuge": {
+      "id": "refuge",
+      "name": "Убежище",
+      "attribute": "mag",
+      "category": "Убежище",
+      "max_level": 5,
+      "desc": "Убежище. Базовый навык, доступный любому выжившему."
+    },
+    "first_aid": {
+      "id": "first_aid",
+      "name": "Первая помощь",
+      "attribute": "mag",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Первая помощь. Базовый навык, доступный любому выжившему."
+    },
+    "stealth": {
+      "id": "stealth",
+      "name": "Скрытность",
+      "attribute": "agi",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Скрытность. Базовый навык, доступный любому выжившему."
+    },
+    "craft": {
+      "id": "craft",
+      "name": "Ремесло",
+      "attribute": "agi",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Ремесло. Базовый навык, доступный любому выжившему."
+    },
+    "trade": {
+      "id": "trade",
+      "name": "Торговля",
+      "attribute": "mag",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Торговля. Базовый навык, доступный любому выжившему."
+    },
+    "survival": {
+      "id": "survival",
+      "name": "Выживание",
+      "attribute": "end",
+      "category": "Общие",
+      "max_level": 5,
+      "desc": "Выживание. Базовый навык, доступный любому выжившему."
+    }
+  }
+}

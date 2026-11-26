@@ -1,0 +1,95 @@
+{
+  "look": {
+    "id": "look",
+    "verbs": ["осмотреться", "посмотреть", "оглянуться", "изучить"],
+    "attribute": "int",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {"text": "Ты оглядываешься. Старый дуб поднимается на двенадцать метров, у корней лежит серый камень, а на юг уходит тропа.", "effects": {}},
+      "failure": {"text": "Ты ничего не замечаешь.", "effects": {}}
+    },
+    "refusal_phrases": {"UNKNOWN_TARGET": "Здесь не на что смотреть."}
+  },
+  "climb_oak": {
+    "id": "climb_oak",
+    "verbs": ["взлезть", "карабкаться", "забраться", "подняться"],
+    "attribute": "str",
+    "base_requirement": 12,
+    "needs_target": true,
+    "max_reach_m": 10,
+    "method_modifiers": {"using_belt": -2, "using_railing": -1},
+    "environment_modifiers": {"wet": 2, "dark": 2},
+    "outcomes": {
+      "success": {"text": "{actor} цепляется за кору и подтягивается на нижнюю ветвь старого дуба. Дерево покачивается.", "effects": {"location": "old_oak_top"}, "xp": 5},
+      "failure": {"text": "{actor} срывается вниз, ударяясь о корни. Нога болит.", "effects": {"add_conditions": ["wounded_leg"]}}
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Такого дерева здесь нет.",
+      "OUT_OF_REACH": "Дерево слишком далеко.",
+      "BLOCKED_BY_CONDITION": "Так сейчас сделать невозможно."
+    }
+  },
+  "pick_stone": {
+    "id": "pick_stone",
+    "verbs": ["поднять", "взять", "собрать"],
+    "attribute": "str",
+    "base_requirement": 8,
+    "needs_target": true,
+    "max_reach_m": 3,
+    "outcomes": {
+      "success": {"text": "{actor} поднимает серый камень. Он тяжелее, чем кажется.", "effects": {"inventory_add": [{"id": "grey_stone", "name": "Серый камень", "weight_kg": 3}]}, "xp": 2},
+      "failure": {"text": "{actor} не может сдвинуть камень с места.", "effects": {}}
+    },
+    "refusal_phrases": {"UNKNOWN_TARGET": "Такого камня рядом нет.", "OUT_OF_REACH": "Камень слишком далеко."}
+  },
+  "walk_path": {
+    "id": "walk_path",
+    "verbs": ["идти", "пойти", "отправиться", "двигаться"],
+    "attribute": "agi",
+    "base_requirement": 5,
+    "needs_target": true,
+    "outcomes": {
+      "success": {"text": "{actor} ступает на тропу и уходит вглубь леса. Голоса поляны стихают.", "effects": {"location": "forest_path"}, "xp": 3},
+      "failure": {"text": "{actor} спотыкается о корень и остаётся на поляне.", "effects": {}}
+    },
+    "refusal_phrases": {"UNKNOWN_TARGET": "Такой тропы здесь нет."}
+  },
+  "rest": {
+    "id": "rest",
+    "verbs": ["отдохнуть", "передохнуть", "присесть", "устроиться"],
+    "attribute": "vit",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {"text": "{actor} присаживается у корней и переводит дух. Сила постепенно возвращается.", "effects": {"remove_conditions": ["exhausted"]}, "xp": 1},
+      "failure": {"text": "{actor} не находит места для отдыха.", "effects": {}}
+    },
+    "refusal_phrases": {}
+  },
+  "run": {
+    "id": "run",
+    "verbs": ["бежать", "побежать", "убежать", "бегом"],
+    "attribute": "agi",
+    "base_requirement": 6,
+    "needs_target": false,
+    "outcomes": {
+      "success": {"text": "{actor} срывается с места и бежит по тропе.", "effects": {"location": "forest_path"}, "xp": 2},
+      "failure": {"text": "{actor} делает пару шагов и останавливается.", "effects": {}}
+    },
+    "refusal_phrases": {"BLOCKED_BY_CONDITION": "Нога не слушается. Бежать невозможно — разве что ползти."}
+  },
+  "strike_stone": {
+    "id": "strike_stone",
+    "verbs": ["ударить", "разбить", "расколоть"],
+    "attribute": "str",
+    "base_requirement": 10,
+    "needs_target": true,
+    "max_reach_m": 3,
+    "outcomes": {
+      "success": {"text": "{actor} бьёт по камню — и он раскалывается, открывая блестящую жилу.", "effects": {"gold": 5}, "xp": 4},
+      "failure": {"text": "Удар скользит по камню, оставляя только лёгкую царапину.", "effects": {}}
+    },
+    "refusal_phrases": {"UNKNOWN_TARGET": "Ударить нечего."}
+  }
+}

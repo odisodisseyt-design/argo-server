@@ -1,0 +1,20 @@
+{
+  "features": {
+    "stats": true, "skills": true, "inventory": true, "quests": true,
+    "map": true, "journal": true, "characters": true, "effects": true,
+    "level_up": true, "crafting": false, "magic": false, "reputation": false,
+    "currency": true, "shop": true,
+    "voice": false, "images": true, "audio": true, "haptics": true, "parallax": true
+  },
+  "stat_schema": [
+    {"id": "str", "name": "Сила", "min": 1, "max": 100, "icon": "muscle", "primary": true},
+    {"id": "agi", "name": "Ловкость", "min": 1, "max": 100, "icon": "feather", "primary": true},
+    {"id": "int", "name": "Интеллект", "min": 1, "max": 100, "icon": "brain", "primary": true},
+    {"id": "vit", "name": "Выносливость", "min": 1, "max": 100, "icon": "heart", "primary": true}
+  ],
+  "resource_schema": [],
+  "skill_categories": ["Общие"],
+  "status_icons": {"wounded_leg": "crutch", "exhausted": "moon"},
+  "currency_label": "золото",
+  "show_odds": true
+}

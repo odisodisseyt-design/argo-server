@@ -1,0 +1,28 @@
+{
+  "location": {
+    "id": "apartment",
+    "name": "Квартира в Чертанове",
+    "coords": [
+      0,
+      0,
+      0
+    ],
+    "elevation_m": 4,
+    "latitude": 55.632,
+    "longitude": 37.608,
+    "district": "Чертаново Северное"
+  },
+  "time": {
+    "day": 1,
+    "hour": 7,
+    "weather": "overcast"
+  },
+  "weather": "overcast",
+  "visibility_m": 40,
+  "environment": {
+    "indoors": true,
+    "power": true
+  },
+  "nearby": [],
+  "locations": []
+}

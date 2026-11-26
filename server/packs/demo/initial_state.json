@@ -1,0 +1,52 @@
+{
+  "world": {
+    "location": {"id": "clearing", "name": "Поляна у старого дуба", "coords": [0, 0, 0], "elevation_m": 120},
+    "time": {"day": 1, "hour": 9, "weather": "clear"},
+    "weather": "clear",
+    "visibility_m": 60,
+    "environment": {},
+    "nearby": [
+      {"id": "old_oak", "name": "Старый дуб", "distance_m": 6, "direction": "С", "height_m": 12,
+       "affordances": ["осмотреть", "взлезть"], "forbidden": ["сломать голыми руками"]},
+      {"id": "grey_stone", "name": "Серый камень", "distance_m": 2, "direction": "В", "height_m": 0.5,
+       "affordances": ["поднять", "ударить"], "forbidden": []},
+      {"id": "path", "name": "Тропа в лес", "distance_m": 8, "direction": "Ю", "height_m": 0,
+       "affordances": ["идти"], "forbidden": []}
+    ]
+  },
+  "presentation": {
+    "mood": "warm",
+    "palette": {"bg": "#0E0D0B", "bg_alt": "#17130F", "accent": "#C9A227", "text": "#E8DECC", "vignette": "#000000"},
+    "weather": "clear",
+    "time_of_day": "day",
+    "particles": {"type": "motes", "density": 0.35, "speed": 0.25},
+    "parallax": {"far": "forest", "mid": "trees", "near": "grass"},
+    "audio_cues": ["wind_low", "birds"],
+    "emotion": {"player": "calm"},
+    "illustration": {"seed": 1001, "subject": "forest_clearing_day", "style_hint": "ink_wash", "slot": "scene_bg", "url": null},
+    "portrait_hints": {},
+    "haptic": "soft_tick",
+    "typography": {"dropcap": true, "pace_ms": 18},
+    "system_theme": "runic",
+    "schema_version": 1
+  },
+  "character_template": {
+    "name": "Путник",
+    "alive": true,
+    "level": 1,
+    "xp": 0,
+    "xp_to_next": 100,
+    "unspent_points": 0,
+    "attributes": {"str": 11, "agi": 10, "int": 12, "vit": 10},
+    "derived": {"carry_kg": 30},
+    "body": {"head": "intact", "torso": "intact", "arm_l": "intact", "arm_r": "intact", "leg_l": "intact", "leg_r": "intact"},
+    "conditions": [],
+    "statuses": [],
+    "skills": [],
+    "inventory": [],
+    "equipment": {},
+    "currency": {"gold": 10},
+    "location": "clearing",
+    "pending_level_up": false
+  }
+}

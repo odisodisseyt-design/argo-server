@@ -1,0 +1,121 @@
+{
+  "features": {
+    "stats": true,
+    "skills": true,
+    "inventory": true,
+    "quests": true,
+    "map": true,
+    "journal": true,
+    "characters": true,
+    "effects": true,
+    "level_up": true,
+    "crafting": true,
+    "magic": true,
+    "reputation": true,
+    "currency": true,
+    "shop": true,
+    "classes": true,
+    "living_world": true,
+    "voice": false,
+    "images": true,
+    "audio": true,
+    "haptics": true,
+    "parallax": true
+  },
+  "stat_schema": [
+    {
+      "id": "str",
+      "name": "Сила",
+      "min": 1,
+      "max": 100,
+      "icon": "muscle",
+      "primary": true
+    },
+    {
+      "id": "agi",
+      "name": "Ловкость",
+      "min": 1,
+      "max": 100,
+      "icon": "feather",
+      "primary": true
+    },
+    {
+      "id": "vit",
+      "name": "Выносливость",
+      "min": 1,
+      "max": 100,
+      "icon": "heart",
+      "primary": true
+    },
+    {
+      "id": "end",
+      "name": "Живучесть",
+      "min": 1,
+      "max": 100,
+      "icon": "shield",
+      "primary": true
+    },
+    {
+      "id": "mag",
+      "name": "Магия",
+      "min": 1,
+      "max": 100,
+      "icon": "rune",
+      "primary": true
+    }
+  ],
+  "resource_schema": [
+    {
+      "id": "mana",
+      "name": "Мана",
+      "max_field": "mana_max",
+      "display": "bar",
+      "color": "#4A7FB5"
+    }
+  ],
+  "skill_categories": [
+    "Боевые",
+    "Ремесленные",
+    "Убежище",
+    "Выживание",
+    "Медицина",
+    "Техника",
+    "Магия",
+    "Социальное",
+    "Скрытность",
+    "Особые"
+  ],
+  "status_icons": {
+    "wounded_leg": "crutch",
+    "bleeding": "drop",
+    "virus": "biohazard",
+    "acid_burn": "flask",
+    "exhausted": "moon",
+    "hypothermia": "snow",
+    "poisoned": "skull",
+    "fear": "eye",
+    "unconscious": "zzz",
+    "dead": "skull"
+  },
+  "currency_label": "монеты выжившего",
+  "show_odds": false,
+  "world_hud": [
+    "era",
+    "time",
+    "weather",
+    "temperature",
+    "season"
+  ],
+  "class_categories": [
+    "Ближний бой",
+    "Дальний бой",
+    "Выживание",
+    "Медицина",
+    "Строительство",
+    "Техника",
+    "Магия",
+    "Социальное",
+    "Скрытность",
+    "Особые"
+  ]
+}

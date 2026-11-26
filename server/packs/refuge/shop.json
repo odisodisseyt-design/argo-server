@@ -1,0 +1,1660 @@
+{
+  "enabled": true,
+  "currencies": [
+    "coins"
+  ],
+  "sections": [
+    "consumables",
+    "equipment",
+    "materials",
+    "structures"
+  ],
+  "items": [
+    {
+      "id": "bandage",
+      "name": "Бинт",
+      "section": "consumables",
+      "price": {
+        "coins": 50
+      },
+      "stock": 5,
+      "restock_per_day": 2,
+      "effect": {
+        "remove_conditions": [
+          "bleeding"
+        ]
+      },
+      "desc": "Останавливает кровотечение. Пахнет антисептиком.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "stew_can",
+      "name": "Банка тушёнки",
+      "section": "consumables",
+      "price": {
+        "coins": 40
+      },
+      "stock": 8,
+      "restock_per_day": 3,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "stew_can",
+            "name": "Банка тушёнки",
+            "weight_kg": 0.4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Банка тушёнки. Сытная и не задаёт вопросов.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "water_5l",
+      "name": "Вода, 5 л",
+      "section": "consumables",
+      "price": {
+        "coins": 30
+      },
+      "stock": 6,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "water_5l",
+            "name": "Вода, 5 л",
+            "weight_kg": 5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Пять литров воды.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "apulin_z10",
+      "name": "Апулин Z-10",
+      "section": "consumables",
+      "price": {
+        "coins": 20
+      },
+      "stock": 30,
+      "restock_per_day": 5,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "apulin_z10",
+            "name": "Апулин Z-10",
+            "weight_kg": 0.05,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Флакон с прозрачной жидкостью.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "first_aid_kit",
+      "name": "Аптечка",
+      "section": "consumables",
+      "price": {
+        "coins": 300
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "first_aid_kit",
+            "name": "Аптечка",
+            "weight_kg": 1.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Аптечка с бинтами, жгутом и ампулами.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "antibiotics",
+      "name": "Антибиотики",
+      "section": "consumables",
+      "price": {
+        "coins": 120
+      },
+      "stock": 3,
+      "restock_per_day": 1,
+      "effect": {
+        "remove_conditions": [
+          "virus"
+        ]
+      },
+      "desc": "Таблетки. Срок годности стёрт.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "bat",
+      "name": "Бита",
+      "section": "equipment",
+      "price": {
+        "coins": 300
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "bat",
+            "name": "Бита",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Простая, но проверенная дубина.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "knife_hunting",
+      "name": "Охотничий нож",
+      "section": "equipment",
+      "price": {
+        "coins": 250
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "knife_hunting",
+            "name": "Охотничий нож",
+            "weight_kg": 0.4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Тяжёлый нож в ножнах.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "hatchet",
+      "name": "Топорик",
+      "section": "equipment",
+      "price": {
+        "coins": 280
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "hatchet",
+            "name": "Топорик",
+            "weight_kg": 1.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Короткий топор.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "flashlight",
+      "name": "Фонарь",
+      "section": "equipment",
+      "price": {
+        "coins": 150
+      },
+      "stock": 3,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "flashlight",
+            "name": "Фонарь",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Фонарь с треснувшим стеклом.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "battery",
+      "name": "Батарея",
+      "section": "equipment",
+      "price": {
+        "coins": 80
+      },
+      "stock": 5,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "battery",
+            "name": "Батарея",
+            "weight_kg": 0.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Батарея. Ещё держит заряд.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "radio",
+      "name": "Радио",
+      "section": "equipment",
+      "price": {
+        "coins": 200
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "radio",
+            "name": "Радио",
+            "weight_kg": 1.0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Старое радио. Иногда ловит голоса.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "camera",
+      "name": "Фотоаппарат",
+      "section": "equipment",
+      "price": {
+        "coins": 300
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "camera",
+            "name": "Фотоаппарат",
+            "weight_kg": 0.6,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Система принимает снимки как отчёт.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "tent",
+      "name": "Палатка",
+      "section": "equipment",
+      "price": {
+        "coins": 400
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "tent",
+            "name": "Палатка",
+            "weight_kg": 4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Двухместная палатка.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "sleeping_bag",
+      "name": "Спальник",
+      "section": "equipment",
+      "price": {
+        "coins": 250
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "sleeping_bag",
+            "name": "Спальник",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Спальник, видавший лучшие ночи.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "solar_panel",
+      "name": "Солнечная панель",
+      "section": "equipment",
+      "price": {
+        "coins": 600
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "solar_panel",
+            "name": "Солнечная панель",
+            "weight_kg": 6,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Складная панель.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "generator_small",
+      "name": "Малый генератор",
+      "section": "equipment",
+      "price": {
+        "coins": 1200
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "generator_small",
+            "name": "Малый генератор",
+            "weight_kg": 18,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Бензиновый генератор. Шумит.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "fuel_can",
+      "name": "Канистра топлива",
+      "section": "materials",
+      "price": {
+        "coins": 100
+      },
+      "stock": 4,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "fuel_can",
+            "name": "Канистра топлива",
+            "weight_kg": 5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Канистра с бензином.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "seeds_vegetables",
+      "name": "Семена овощей",
+      "section": "materials",
+      "price": {
+        "coins": 50
+      },
+      "stock": 10,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "seeds_vegetables",
+            "name": "Семена овощей",
+            "weight_kg": 0.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Пакетик семян.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "fertilizer",
+      "name": "Удобрение",
+      "section": "materials",
+      "price": {
+        "coins": 80
+      },
+      "stock": 6,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "fertilizer",
+            "name": "Удобрение",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Мешок удобрения.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "hammer",
+      "name": "Молоток",
+      "section": "materials",
+      "price": {
+        "coins": 120
+      },
+      "stock": 3,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "hammer",
+            "name": "Молоток",
+            "weight_kg": 1,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Молоток с деревянной ручкой.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "saw",
+      "name": "Пила",
+      "section": "materials",
+      "price": {
+        "coins": 150
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "saw",
+            "name": "Пила",
+            "weight_kg": 1.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Ручная пила.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "axe",
+      "name": "Топор",
+      "section": "materials",
+      "price": {
+        "coins": 350
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "axe",
+            "name": "Топор",
+            "weight_kg": 2.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Большой топор.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "crowbar",
+      "name": "Лом",
+      "section": "materials",
+      "price": {
+        "coins": 200
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "crowbar",
+            "name": "Лом",
+            "weight_kg": 3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Лом. Открывает двери и головы.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "screwdriver_set",
+      "name": "Набор отвёрток",
+      "section": "materials",
+      "price": {
+        "coins": 180
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "screwdriver_set",
+            "name": "Набор отвёрток",
+            "weight_kg": 0.8,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Набор отвёрток.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "wrench",
+      "name": "Гаечный ключ",
+      "section": "materials",
+      "price": {
+        "coins": 160
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "wrench",
+            "name": "Гаечный ключ",
+            "weight_kg": 1,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Гаечный ключ.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "lumber",
+      "name": "Доска",
+      "section": "materials",
+      "price": {
+        "coins": 60
+      },
+      "stock": 10,
+      "restock_per_day": 3,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "lumber",
+            "name": "Доска",
+            "weight_kg": 4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Доска с гвоздями.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "nails",
+      "name": "Гвозди",
+      "section": "materials",
+      "price": {
+        "coins": 30
+      },
+      "stock": 20,
+      "restock_per_day": 5,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "nails",
+            "name": "Гвозди",
+            "weight_kg": 0.4,
+            "quantity": 10
+          }
+        ]
+      },
+      "desc": "Горсть гвоздей.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "wire",
+      "name": "Проволока",
+      "section": "materials",
+      "price": {
+        "coins": 40
+      },
+      "stock": 10,
+      "restock_per_day": 3,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "wire",
+            "name": "Проволока",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Моток проволоки.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "duct_tape",
+      "name": "Скотч",
+      "section": "materials",
+      "price": {
+        "coins": 45
+      },
+      "stock": 8,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "duct_tape",
+            "name": "Скотч",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Рулон серого скотча.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "tarp",
+      "name": "Брезент",
+      "section": "materials",
+      "price": {
+        "coins": 70
+      },
+      "stock": 5,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "tarp",
+            "name": "Брезент",
+            "weight_kg": 3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Кусок брезента.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "sandbag",
+      "name": "Мешок с песком",
+      "section": "materials",
+      "price": {
+        "coins": 80
+      },
+      "stock": 6,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "sandbag",
+            "name": "Мешок с песком",
+            "weight_kg": 15,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Тяжёлый мешок с песком.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "concrete",
+      "name": "Бетон",
+      "section": "materials",
+      "price": {
+        "coins": 120
+      },
+      "stock": 4,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "concrete",
+            "name": "Бетон",
+            "weight_kg": 20,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Мешок бетонной смеси.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "brick",
+      "name": "Кирпич",
+      "section": "materials",
+      "price": {
+        "coins": 25
+      },
+      "stock": 20,
+      "restock_per_day": 5,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "brick",
+            "name": "Кирпич",
+            "weight_kg": 3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Один кирпич.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "metal_sheet",
+      "name": "Лист металла",
+      "section": "materials",
+      "price": {
+        "coins": 90
+      },
+      "stock": 5,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "metal_sheet",
+            "name": "Лист металла",
+            "weight_kg": 8,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Ржавый лист металла.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "glass",
+      "name": "Стекло",
+      "section": "materials",
+      "price": {
+        "coins": 50
+      },
+      "stock": 5,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "glass",
+            "name": "Стекло",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Кусок толстого стекла.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "coal",
+      "name": "Уголь",
+      "section": "materials",
+      "price": {
+        "coins": 40
+      },
+      "stock": 8,
+      "restock_per_day": 2,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "coal",
+            "name": "Уголь",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Мешок угля.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "firewood",
+      "name": "Дрова",
+      "section": "materials",
+      "price": {
+        "coins": 30
+      },
+      "stock": 10,
+      "restock_per_day": 3,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "firewood",
+            "name": "Дрова",
+            "weight_kg": 5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Охапка дров.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "field_plot",
+      "name": "Поле",
+      "section": "structures",
+      "price": {
+        "coins": 100
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "field_plot",
+            "name": "Поле",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Системный участок под посадки. Один гектар.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "expansion_hectare",
+      "name": "Расширение убежища",
+      "section": "structures",
+      "price": {
+        "coins": 200
+      },
+      "stock": 3,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "expansion_hectare",
+            "name": "Расширение убежища",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Ещё один гектар пространства.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "planner_l1",
+      "name": "Планировщик",
+      "section": "structures",
+      "price": {
+        "coins": 500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "planner_l1",
+            "name": "Планировщик",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Планировщик задач.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "laptop_l1",
+      "name": "Ноутбук Системы",
+      "section": "structures",
+      "price": {
+        "coins": 2200
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "laptop_l1",
+            "name": "Ноутбук Системы",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Системный ноутбук. Уровень 1.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "rabbit",
+      "name": "Кролик",
+      "section": "structures",
+      "price": {
+        "coins": 500
+      },
+      "stock": 4,
+      "restock_per_day": 1,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "rabbit",
+            "name": "Кролик",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Живой кролик.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "rabbit_pen",
+      "name": "Клетка для кроликов",
+      "section": "structures",
+      "price": {
+        "coins": 1600
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "rabbit_pen",
+            "name": "Клетка для кроликов",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Клетка для кроликов.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "rabbit_feeder",
+      "name": "Кормушка",
+      "section": "structures",
+      "price": {
+        "coins": 200
+      },
+      "stock": 2,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "rabbit_feeder",
+            "name": "Кормушка",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Кормушка.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "mineral_spring",
+      "name": "Минеральный источник",
+      "section": "structures",
+      "price": {
+        "coins": 1500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "mineral_spring",
+            "name": "Минеральный источник",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Источник чистой воды.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "bottomless_pit",
+      "name": "Бездонная яма",
+      "section": "structures",
+      "price": {
+        "coins": 800
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "bottomless_pit",
+            "name": "Бездонная яма",
+            "weight_kg": 0,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Яма для отходов.",
+      "requires": {
+        "era": "E0"
+      }
+    },
+    {
+      "id": "pistol",
+      "name": "Пистолет",
+      "section": "equipment",
+      "price": {
+        "coins": 3000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "pistol",
+            "name": "Пистолет",
+            "weight_kg": 1.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Пистолет без клейма. Патроны к нему — отдельная проблема.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "rifle",
+      "name": "Винтовка",
+      "section": "equipment",
+      "price": {
+        "coins": 6000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "rifle",
+            "name": "Винтовка",
+            "weight_kg": 4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Винтовка с оптикой. Тяжёлая.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "shotgun",
+      "name": "Дробовик",
+      "section": "equipment",
+      "price": {
+        "coins": 5000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "shotgun",
+            "name": "Дробовик",
+            "weight_kg": 3.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Дробовик. Громкий и убедительный.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "ammo_9mm",
+      "name": "Патроны 9 мм",
+      "section": "materials",
+      "price": {
+        "coins": 200
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "ammo_9mm",
+            "name": "Патроны 9 мм",
+            "weight_kg": 0.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Коробка патронов.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "ammo_12g",
+      "name": "Патроны 12-го калибра",
+      "section": "materials",
+      "price": {
+        "coins": 250
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "ammo_12g",
+            "name": "Патроны 12-го калибра",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Коробка дробовых патронов.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "armor_plate",
+      "name": "Бронепластина",
+      "section": "equipment",
+      "price": {
+        "coins": 2500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "armor_plate",
+            "name": "Бронепластина",
+            "weight_kg": 6,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Тяжёлая пластина. Держит удар.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "ballistic_vest",
+      "name": "Бронежилет",
+      "section": "equipment",
+      "price": {
+        "coins": 4000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "ballistic_vest",
+            "name": "Бронежилет",
+            "weight_kg": 8,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Бронежилет без опознавательных знаков.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "helmet",
+      "name": "Шлем",
+      "section": "equipment",
+      "price": {
+        "coins": 900
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "helmet",
+            "name": "Шлем",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Защитный шлем.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "night_vision",
+      "name": "Прибор ночного видения",
+      "section": "equipment",
+      "price": {
+        "coins": 3500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "night_vision",
+            "name": "Прибор ночного видения",
+            "weight_kg": 1.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Зелёный мир в окуляре.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "radio_station",
+      "name": "Радиостанция",
+      "section": "equipment",
+      "price": {
+        "coins": 2800
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "radio_station",
+            "name": "Радиостанция",
+            "weight_kg": 5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Мощная радиостанция. Ловит дальние голоса.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "drone",
+      "name": "Дрон",
+      "section": "equipment",
+      "price": {
+        "coins": 3200
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "drone",
+            "name": "Дрон",
+            "weight_kg": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Небольшой дрон с камерой.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "drone_battery",
+      "name": "Батарея дрона",
+      "section": "materials",
+      "price": {
+        "coins": 300
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "drone_battery",
+            "name": "Батарея дрона",
+            "weight_kg": 0.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Сменная батарея.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "rune_blank",
+      "name": "Заготовка руны",
+      "section": "materials",
+      "price": {
+        "coins": 700
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "rune_blank",
+            "name": "Заготовка руны",
+            "weight_kg": 0.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Гладкая пластина под руну.",
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "spatial_shard",
+      "name": "Осколок пространства",
+      "section": "materials",
+      "price": {
+        "coins": 5000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "spatial_shard",
+            "name": "Осколок пространства",
+            "weight_kg": 0.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Кусок мира, который не должен помещаться в ладони.",
+      "requires": {
+        "era": "E2"
+      }
+    },
+    {
+      "id": "ocean_map",
+      "name": "Карта океана",
+      "section": "equipment",
+      "price": {
+        "coins": 2000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "ocean_map",
+            "name": "Карта океана",
+            "weight_kg": 0.2,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Карта течений, которых нет.",
+      "requires": {
+        "era": "E2"
+      }
+    },
+    {
+      "id": "mana_crystal",
+      "name": "Кристалл маны",
+      "section": "materials",
+      "price": {
+        "coins": 3500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "mana_crystal",
+            "name": "Кристалл маны",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Кристалл, в котором плещется свет.",
+      "requires": {
+        "era": "E2"
+      }
+    },
+    {
+      "id": "void_stone",
+      "name": "Камень пустоты",
+      "section": "materials",
+      "price": {
+        "coins": 4500
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "void_stone",
+            "name": "Камень пустоты",
+            "weight_kg": 0.4,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Камень, который не отбрасывает тени.",
+      "requires": {
+        "era": "E2"
+      }
+    },
+    {
+      "id": "ark_key",
+      "name": "Ключ Ковчега",
+      "section": "equipment",
+      "price": {
+        "coins": 12000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "ark_key",
+            "name": "Ключ Ковчега",
+            "weight_kg": 0.3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Ключ, который открывает не дверь, а целый мир.",
+      "requires": {
+        "era": "E3"
+      }
+    },
+    {
+      "id": "tech_module",
+      "name": "Техномодуль",
+      "section": "materials",
+      "price": {
+        "coins": 8000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "tech_module",
+            "name": "Техномодуль",
+            "weight_kg": 1,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Металлический модуль с чужими разъёмами.",
+      "requires": {
+        "era": "E4"
+      }
+    },
+    {
+      "id": "neural_interface",
+      "name": "Нейроинтерфейс",
+      "section": "equipment",
+      "price": {
+        "coins": 15000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "neural_interface",
+            "name": "Нейроинтерфейс",
+            "weight_kg": 0.5,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Устройство для связи с машинами.",
+      "requires": {
+        "era": "E4"
+      }
+    },
+    {
+      "id": "cyber_arm",
+      "name": "Кибернетическая рука",
+      "section": "equipment",
+      "price": {
+        "coins": 14000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "cyber_arm",
+            "name": "Кибернетическая рука",
+            "weight_kg": 3,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Рука из металла и света.",
+      "requires": {
+        "era": "E4"
+      }
+    },
+    {
+      "id": "admin_key",
+      "name": "Ключ Администратора",
+      "section": "equipment",
+      "price": {
+        "coins": 50000
+      },
+      "stock": 1,
+      "restock_per_day": 0,
+      "effect": {
+        "inventory_add": [
+          {
+            "id": "admin_key",
+            "name": "Ключ Администратора",
+            "weight_kg": 0.1,
+            "quantity": 1
+          }
+        ]
+      },
+      "desc": "Ключ без замка. Пока.",
+      "requires": {
+        "era": "E5"
+      }
+    }
+  ]
+}

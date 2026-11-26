@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+aiosqlite
+argon2-cffi
+httpx
+websockets
+python-multipart

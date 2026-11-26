@@ -1,0 +1,565 @@
+{
+  "world": {
+    "location": {
+      "id": "apartment",
+      "name": "Квартира в Чертанове",
+      "coords": [
+        0,
+        0,
+        0
+      ],
+      "elevation_m": 4,
+      "latitude": 55.632,
+      "longitude": 37.608,
+      "district": "Чертаново Северное"
+    },
+    "time": {
+      "day": 1,
+      "hour": 7,
+      "weather": "overcast"
+    },
+    "weather": "overcast",
+    "visibility_m": 40,
+    "environment": {
+      "indoors": true,
+      "power": true,
+      "dawn": true
+    },
+    "nearby": [],
+    "locations": [],
+    "stash": []
+  },
+  "era": "E0",
+  "flags": {},
+  "knowledge": [
+    "система"
+  ],
+  "refuge": {
+    "status": "none",
+    "level": 0
+  },
+  "npcs": {},
+  "factions": {},
+  "ecology": {},
+  "class_selection": {
+    "pending_users": []
+  },
+  "living": {
+    "season": "осень",
+    "weather": "overcast",
+    "temperature_c": 12,
+    "events": [],
+    "event_history": [],
+    "rumors": [],
+    "weather_until": 0,
+    "time_of_day": "рассвет"
+  },
+  "presentation": {
+    "mood": "tense",
+    "palette": {
+      "bg": "#0E0D0B",
+      "bg_alt": "#17130F",
+      "accent": "#C9A227",
+      "text": "#E8DECC",
+      "vignette": "#000000"
+    },
+    "weather": "overcast",
+    "time_of_day": "dawn",
+    "particles": {
+      "type": "dust",
+      "density": 0.35,
+      "speed": 0.15
+    },
+    "parallax": {
+      "far": "city",
+      "mid": "window",
+      "near": "table"
+    },
+    "audio_cues": [
+      "distant_siren",
+      "radio_static",
+      "wind_glass"
+    ],
+    "emotion": {
+      "player": "tense"
+    },
+    "illustration": {
+      "seed": 78001,
+      "subject": "apartment_dawn",
+      "style_hint": "ink_wash",
+      "slot": "scene_bg",
+      "url": null
+    },
+    "portrait_hints": {},
+    "haptic": "soft_tick",
+    "typography": {
+      "dropcap": true,
+      "pace_ms": 18
+    },
+    "system_theme": "hologram",
+    "schema_version": 1
+  },
+  "character_template": {
+    "name": "Выживший",
+    "alive": true,
+    "level": 1,
+    "xp": 0,
+    "xp_to_next": 5,
+    "unspent_points": 0,
+    "skill_points": 0,
+    "attributes": {
+      "str": 10,
+      "agi": 10,
+      "vit": 10,
+      "end": 10,
+      "mag": 10
+    },
+    "derived": {
+      "mana_max": 30,
+      "carry_kg": 30,
+      "refuge_level": 0
+    },
+    "resources": {
+      "mana": 30
+    },
+    "body": {
+      "head": {
+        "status": "intact",
+        "vital": true
+      },
+      "torso": {
+        "status": "intact",
+        "vital": true
+      },
+      "arm_l": {
+        "status": "intact",
+        "vital": false
+      },
+      "arm_r": {
+        "status": "intact",
+        "vital": false
+      },
+      "leg_l": {
+        "status": "intact",
+        "vital": false
+      },
+      "leg_r": {
+        "status": "intact",
+        "vital": false
+      }
+    },
+    "conditions": [],
+    "statuses": [],
+    "skills": [
+      {
+        "id": "sense",
+        "name": "Чутьё",
+        "rank": 1,
+        "attribute": "mag",
+        "bonus": 0,
+        "category": "Общие"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "bat",
+        "name": "Бита",
+        "weight_kg": 2,
+        "quantity": 1
+      },
+      {
+        "id": "knife_hunting",
+        "name": "Охотничий нож",
+        "weight_kg": 0.4,
+        "quantity": 1
+      },
+      {
+        "id": "knife_swiss",
+        "name": "Швейцарский нож",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "hatchet",
+        "name": "Топорик",
+        "weight_kg": 1.2,
+        "quantity": 1
+      },
+      {
+        "id": "shovel_folding",
+        "name": "Складная лопата",
+        "weight_kg": 1.5,
+        "quantity": 1
+      },
+      {
+        "id": "flashlight",
+        "name": "Фонарь",
+        "weight_kg": 0.3,
+        "quantity": 1
+      },
+      {
+        "id": "radio",
+        "name": "Радио",
+        "weight_kg": 1.0,
+        "quantity": 1
+      },
+      {
+        "id": "battery",
+        "name": "Батарея",
+        "weight_kg": 0.5,
+        "quantity": 1
+      },
+      {
+        "id": "laptop",
+        "name": "Ноутбук",
+        "weight_kg": 2.5,
+        "quantity": 1
+      },
+      {
+        "id": "tent",
+        "name": "Палатка",
+        "weight_kg": 4,
+        "quantity": 1
+      },
+      {
+        "id": "sleeping_bag",
+        "name": "Спальник",
+        "weight_kg": 2,
+        "quantity": 1
+      },
+      {
+        "id": "hammock",
+        "name": "Гамак",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "table",
+        "name": "Стол",
+        "weight_kg": 12,
+        "quantity": 1
+      },
+      {
+        "id": "lamp_oil",
+        "name": "Масляная лампа",
+        "weight_kg": 0.8,
+        "quantity": 1
+      },
+      {
+        "id": "water_5l",
+        "name": "Вода, 5 л",
+        "weight_kg": 5,
+        "quantity": 1
+      },
+      {
+        "id": "stew_can",
+        "name": "Банка тушёнки",
+        "weight_kg": 0.4,
+        "quantity": 10
+      },
+      {
+        "id": "bandage",
+        "name": "Бинт",
+        "weight_kg": 0.1,
+        "quantity": 3
+      },
+      {
+        "id": "apulin_z10",
+        "name": "Апулин Z-10",
+        "weight_kg": 0.05,
+        "quantity": 30
+      },
+      {
+        "id": "backpack",
+        "name": "Рюкзак",
+        "weight_kg": 1.5,
+        "quantity": 1
+      },
+      {
+        "id": "rope",
+        "name": "Верёвка",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "lighter",
+        "name": "Зажигалка",
+        "weight_kg": 0.1,
+        "quantity": 1
+      },
+      {
+        "id": "matches",
+        "name": "Спички",
+        "weight_kg": 0.05,
+        "quantity": 1
+      },
+      {
+        "id": "candle",
+        "name": "Свеча",
+        "weight_kg": 0.1,
+        "quantity": 3
+      },
+      {
+        "id": "pot",
+        "name": "Котелок",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "bowl",
+        "name": "Миска",
+        "weight_kg": 0.3,
+        "quantity": 1
+      },
+      {
+        "id": "clothes",
+        "name": "Одежда",
+        "weight_kg": 1.5,
+        "quantity": 1
+      },
+      {
+        "id": "boots",
+        "name": "Ботинки",
+        "weight_kg": 1.2,
+        "quantity": 1
+      },
+      {
+        "id": "jacket",
+        "name": "Куртка",
+        "weight_kg": 2,
+        "quantity": 1
+      },
+      {
+        "id": "gloves",
+        "name": "Перчатки",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "gas_mask",
+        "name": "Противогаз",
+        "weight_kg": 1.8,
+        "quantity": 1
+      },
+      {
+        "id": "map_paper",
+        "name": "Карта",
+        "weight_kg": 0.1,
+        "quantity": 1
+      },
+      {
+        "id": "compass",
+        "name": "Компас",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "notebook",
+        "name": "Блокнот",
+        "weight_kg": 0.3,
+        "quantity": 1
+      },
+      {
+        "id": "pencil",
+        "name": "Карандаш",
+        "weight_kg": 0.05,
+        "quantity": 1
+      },
+      {
+        "id": "first_aid_kit",
+        "name": "Аптечка",
+        "weight_kg": 1.5,
+        "quantity": 1
+      },
+      {
+        "id": "antiseptic",
+        "name": "Антисептик",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "needle_thread",
+        "name": "Иголка и нить",
+        "weight_kg": 0.05,
+        "quantity": 1
+      },
+      {
+        "id": "canned_fish",
+        "name": "Консервы рыбные",
+        "weight_kg": 0.3,
+        "quantity": 3
+      },
+      {
+        "id": "crackers",
+        "name": "Галеты",
+        "weight_kg": 0.2,
+        "quantity": 4
+      },
+      {
+        "id": "tea",
+        "name": "Чай",
+        "weight_kg": 0.1,
+        "quantity": 1
+      },
+      {
+        "id": "coffee",
+        "name": "Кофе",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "sugar",
+        "name": "Сахар",
+        "weight_kg": 0.5,
+        "quantity": 1
+      },
+      {
+        "id": "salt",
+        "name": "Соль",
+        "weight_kg": 0.5,
+        "quantity": 1
+      },
+      {
+        "id": "soap",
+        "name": "Мыло",
+        "weight_kg": 0.2,
+        "quantity": 1
+      },
+      {
+        "id": "toothpaste",
+        "name": "Зубная паста",
+        "weight_kg": 0.1,
+        "quantity": 1
+      },
+      {
+        "id": "duct_tape",
+        "name": "Скотч",
+        "weight_kg": 0.3,
+        "quantity": 1
+      },
+      {
+        "id": "wire",
+        "name": "Проволока",
+        "weight_kg": 0.3,
+        "quantity": 1
+      },
+      {
+        "id": "nails",
+        "name": "Гвозди",
+        "weight_kg": 0.4,
+        "quantity": 20
+      },
+      {
+        "id": "hammer",
+        "name": "Молоток",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "saw",
+        "name": "Пила",
+        "weight_kg": 1.2,
+        "quantity": 1
+      },
+      {
+        "id": "axe",
+        "name": "Топор",
+        "weight_kg": 2.5,
+        "quantity": 1
+      },
+      {
+        "id": "crowbar",
+        "name": "Лом",
+        "weight_kg": 3,
+        "quantity": 1
+      },
+      {
+        "id": "screwdriver_set",
+        "name": "Набор отвёрток",
+        "weight_kg": 0.8,
+        "quantity": 1
+      },
+      {
+        "id": "wrench",
+        "name": "Гаечный ключ",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "tarp",
+        "name": "Брезент",
+        "weight_kg": 3,
+        "quantity": 1
+      },
+      {
+        "id": "coal",
+        "name": "Уголь",
+        "weight_kg": 2,
+        "quantity": 1
+      },
+      {
+        "id": "firewood",
+        "name": "Дрова",
+        "weight_kg": 5,
+        "quantity": 1
+      },
+      {
+        "id": "empty_bottle",
+        "name": "Пустая бутылка",
+        "weight_kg": 0.4,
+        "quantity": 5
+      },
+      {
+        "id": "can_empty",
+        "name": "Пустая банка",
+        "weight_kg": 0.1,
+        "quantity": 5
+      },
+      {
+        "id": "dishes",
+        "name": "Посуда",
+        "weight_kg": 1,
+        "quantity": 1
+      },
+      {
+        "id": "solar_panel",
+        "name": "Солнечная панель",
+        "weight_kg": 6,
+        "quantity": 1
+      },
+      {
+        "id": "water_filter",
+        "name": "Фильтр для воды",
+        "weight_kg": 1.2,
+        "quantity": 1
+      },
+      {
+        "id": "fishing_rod",
+        "name": "Удочка",
+        "weight_kg": 1.5,
+        "quantity": 1
+      },
+      {
+        "id": "seeds_vegetables",
+        "name": "Семена овощей",
+        "weight_kg": 0.2,
+        "quantity": 1
+      }
+    ],
+    "equipment": {
+      "weapon": "bat",
+      "armor": "jacket"
+    },
+    "currency": {
+      "coins": 0
+    },
+    "location": "apartment",
+    "class_id": null,
+    "class_name": null,
+    "class_category": null,
+    "perks": [],
+    "pending_class_selection": false,
+    "pending_level_up": false
+  },
+  "state_version": 2
+}

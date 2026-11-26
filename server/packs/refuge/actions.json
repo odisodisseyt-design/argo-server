@@ -1,0 +1,899 @@
+{
+  "look": {
+    "id": "look",
+    "verbs": [
+      "осмотреться",
+      "посмотреть",
+      "оглянуться",
+      "изучить",
+      "обследовать",
+      "осмотреть",
+      "смотрю",
+      "оглядываюсь",
+      "осматриваюсь",
+      "гляжу"
+    ],
+    "attribute": "mag",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты обводишь взглядом место и замечаешь то, что раньше пропускал.",
+        "effects": {
+          "look": true
+        }
+      },
+      "failure": {
+        "text": "Внимание рассеивается. Ты видишь только то, что уже знал.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "move": {
+    "id": "move",
+    "verbs": [
+      "идти",
+      "пойти",
+      "перейти",
+      "войти",
+      "двигаться",
+      "направиться",
+      "пройти",
+      "спуститься",
+      "подняться",
+      "иду",
+      "выхожу",
+      "выйти",
+      "выходить",
+      "спускаюсь",
+      "поднимаюсь",
+      "захожу",
+      "зайти",
+      "заглянуть",
+      "перехожу",
+      "направляюсь",
+      "двигаюсь",
+      "отправляюсь",
+      "возвращаюсь"
+    ],
+    "attribute": "agi",
+    "base_requirement": 4,
+    "needs_target": true,
+    "max_reach_m": 999,
+    "outcomes": {
+      "success": {
+        "text": "Ты проходишь дальше. Под ногами скрипит пол, за спиной остаётся прежнее место.",
+        "effects": {
+          "move": true
+        }
+      },
+      "failure": {
+        "text": "Дорога упирается в препятствие. Ты остаёшься на месте.",
+        "effects": {
+          "move": false,
+          "add_conditions": [
+            "exhausted"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Туда не пройти. Такого выхода здесь нет.",
+      "OUT_OF_REACH": "Слишком далеко."
+    }
+  },
+  "run": {
+    "id": "run",
+    "verbs": [
+      "бежать",
+      "побежать",
+      "убежать",
+      "бегом",
+      "рваться",
+      "отступить",
+      "бегу"
+    ],
+    "attribute": "agi",
+    "base_requirement": 7,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты срываешься с места и уходишь от опасности.",
+        "effects": {
+          "flee": true
+        }
+      },
+      "failure": {
+        "text": "Ты делаешь пару шагов и спотыкаешься.",
+        "effects": {
+          "add_conditions": [
+            "exhausted"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {
+      "BLOCKED_BY_CONDITION": "Нога не слушается. Бежать нельзя."
+    }
+  },
+  "attack": {
+    "id": "attack",
+    "verbs": [
+      "атаковать",
+      "ударить",
+      "бить",
+      "убить",
+      "зарубить",
+      "стрелять",
+      "выстрелить",
+      "бросить",
+      "напасть",
+      "убиваю",
+      "убью",
+      "бью",
+      "атакую",
+      "нападаю",
+      "зарублю",
+      "убий",
+      "бей",
+      "атакуй",
+      "стреляю",
+      "рублю",
+      "колю"
+    ],
+    "attribute": "str",
+    "base_requirement": 8,
+    "needs_target": true,
+    "max_reach_m": 20,
+    "method_modifiers": {
+      "using_belt": 1,
+      "using_railing": 1,
+      "aim": 2
+    },
+    "outcomes": {
+      "success": {
+        "text": "Удар доходит до цели. Тело противника оседает, и бой заканчивается.",
+        "effects": {
+          "combat_win": true
+        }
+      },
+      "failure": {
+        "text": "Удар скользит. Противник отвечает, и на коже остаётся след.",
+        "effects": {
+          "combat_lose": true,
+          "add_conditions": [
+            "bleeding"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Рядом нет цели для удара.",
+      "OUT_OF_REACH": "Цель слишком далеко."
+    }
+  },
+  "dodge": {
+    "id": "dodge",
+    "verbs": [
+      "уклониться",
+      "увернуться",
+      "отпрыгнуть",
+      "прыгнуть в сторону",
+      "уклоняюсь",
+      "уворачиваюсь"
+    ],
+    "attribute": "agi",
+    "base_requirement": 7,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты уходишь в сторону, и удар проходит мимо.",
+        "effects": {}
+      },
+      "failure": {
+        "text": "Ты поворачиваешь слишком поздно.",
+        "effects": {
+          "add_conditions": [
+            "acid_burn"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "hide": {
+    "id": "hide",
+    "verbs": [
+      "спрятаться",
+      "укрыться",
+      "затаиться",
+      "притаиться",
+      "скрыться",
+      "прячусь",
+      "скрываюсь"
+    ],
+    "attribute": "agi",
+    "base_requirement": 6,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты замираешь в тени, и шаги проходят мимо.",
+        "effects": {
+          "hide": true
+        }
+      },
+      "failure": {
+        "text": "Ты задеваешь что-то локтем, и звук выдаёт тебя.",
+        "effects": {
+          "add_conditions": [
+            "exhausted"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "search": {
+    "id": "search",
+    "verbs": [
+      "обыскать",
+      "поискать",
+      "порыться",
+      "проверить",
+      "открыть",
+      "взломать",
+      "ищу",
+      "обыскиваю",
+      "открываю",
+      "проверяю"
+    ],
+    "attribute": "mag",
+    "base_requirement": 4,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты находишь то, что было спрятано или забыто.",
+        "effects": {
+          "search": true
+        }
+      },
+      "failure": {
+        "text": "Здесь ничего нет. Или ты смотришь не туда.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "take": {
+    "id": "take",
+    "verbs": [
+      "взять",
+      "подобрать",
+      "забрать",
+      "прикарманить",
+      "беру",
+      "подбираю",
+      "забираю"
+    ],
+    "attribute": "agi",
+    "base_requirement": 3,
+    "needs_target": true,
+    "max_reach_m": 8,
+    "outcomes": {
+      "success": {
+        "text": "Вещь оказывается у тебя в руках.",
+        "effects": {
+          "take": true
+        }
+      },
+      "failure": {
+        "text": "Вещь выскальзывает или не хочет отдаваться.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Здесь нечего взять."
+    }
+  },
+  "use": {
+    "id": "use",
+    "verbs": [
+      "использовать",
+      "применить",
+      "выпить",
+      "съесть",
+      "надеть",
+      "включить",
+      "зажечь",
+      "пользуюсь",
+      "надеваю",
+      "включаю",
+      "зажигаю",
+      "пью"
+    ],
+    "attribute": "mag",
+    "base_requirement": 3,
+    "needs_target": true,
+    "max_reach_m": 5,
+    "outcomes": {
+      "success": {
+        "text": "Ты используешь вещь по назначению.",
+        "effects": {
+          "use": true
+        }
+      },
+      "failure": {
+        "text": "Вещь не срабатывает так, как ты рассчитывал.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Этого нет под рукой."
+    }
+  },
+  "talk": {
+    "id": "talk",
+    "verbs": [
+      "заговорить",
+      "поговорить",
+      "спросить",
+      "сказать",
+      "ответить",
+      "уговорить",
+      "говорю",
+      "спрашиваю",
+      "отвечаю",
+      "зову",
+      "обращаюсь"
+    ],
+    "attribute": "mag",
+    "base_requirement": 5,
+    "needs_target": true,
+    "max_reach_m": 10,
+    "outcomes": {
+      "success": {
+        "text": "Человек слушает. Между вами завязывается разговор.",
+        "effects": {
+          "talk": true
+        }
+      },
+      "failure": {
+        "text": "Человек отводит взгляд и не хочет продолжать.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Здесь не с кем говорить."
+    }
+  },
+  "help": {
+    "id": "help",
+    "verbs": [
+      "помочь",
+      "помощь",
+      "поддержать",
+      "перевязать",
+      "накормить",
+      "помогаю",
+      "перевязываю"
+    ],
+    "attribute": "mag",
+    "base_requirement": 4,
+    "needs_target": true,
+    "max_reach_m": 5,
+    "outcomes": {
+      "success": {
+        "text": "Ты помогаешь. Человек это замечает.",
+        "effects": {
+          "help": true
+        }
+      },
+      "failure": {
+        "text": "Помощь выходит неловкой, и человек отстраняется.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Нужно выбрать, кому помогать."
+    }
+  },
+  "trade": {
+    "id": "trade",
+    "verbs": [
+      "торговать",
+      "обменять",
+      "купить",
+      "продать",
+      "предложить обмен"
+    ],
+    "attribute": "mag",
+    "base_requirement": 5,
+    "needs_target": true,
+    "max_reach_m": 10,
+    "outcomes": {
+      "success": {
+        "text": "Вы сходитесь в цене. Вещь меняет хозяина.",
+        "effects": {
+          "trade": true
+        }
+      },
+      "failure": {
+        "text": "Сделка не складывается: каждый тянет в свою сторону.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Торговать здесь не с кем."
+    }
+  },
+  "rest": {
+    "id": "rest",
+    "verbs": [
+      "отдохнуть",
+      "передохнуть",
+      "присесть",
+      "восстановиться",
+      "лечь",
+      "поспать",
+      "переждать",
+      "отдыхаю",
+      "сажусь",
+      "сплю",
+      "ложусь"
+    ],
+    "attribute": "vit",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты позволяешь себе минуту покоя. Дыхание выравнивается.",
+        "effects": {
+          "rest": true
+        }
+      },
+      "failure": {
+        "text": "Покой не приходит. Каждый шорох кажется шагами.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "craft": {
+    "id": "craft",
+    "verbs": [
+      "создать",
+      "сделать",
+      "починить",
+      "собрать",
+      "смастерить",
+      "модифицировать",
+      "делаю",
+      "чиню",
+      "собираю"
+    ],
+    "attribute": "agi",
+    "base_requirement": 6,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Пальцы сами собирают нужное. Получается некрасиво, но работает.",
+        "effects": {
+          "craft": true
+        }
+      },
+      "failure": {
+        "text": "Деталь не подходит, и ты откладываешь затею.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "build": {
+    "id": "build",
+    "verbs": [
+      "построить",
+      "укрепить",
+      "забаррикадировать",
+      "возвести",
+      "обустроить",
+      "строю",
+      "укрепляю"
+    ],
+    "attribute": "vit",
+    "base_requirement": 6,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты вкладываешь силы в постройку. Она держится.",
+        "effects": {
+          "build": true
+        }
+      },
+      "failure": {
+        "text": "Постройка выходит кривой, и её приходится переделывать.",
+        "effects": {
+          "add_conditions": [
+            "exhausted"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "treat": {
+    "id": "treat",
+    "verbs": [
+      "лечить",
+      "перевязать",
+      "обработать",
+      "промыть",
+      "дать лекарство"
+    ],
+    "attribute": "mag",
+    "base_requirement": 5,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты обрабатываешь рану. Кровь останавливается, дыхание становится ровнее.",
+        "effects": {
+          "treat": true
+        }
+      },
+      "failure": {
+        "text": "Помощь запаздывает. Рана не хочет закрываться.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "cast": {
+    "id": "cast",
+    "verbs": [
+      "колдовать",
+      "заклинать",
+      "использовать ману",
+      "пустить заряд",
+      "магия",
+      "прочитать руну"
+    ],
+    "attribute": "mag",
+    "base_requirement": 8,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Сила проходит через тебя и меняет пространство вокруг.",
+        "effects": {
+          "cast": true
+        }
+      },
+      "failure": {
+        "text": "Заклинание рассыпается. Мана уходит впустую.",
+        "effects": {
+          "add_conditions": [
+            "exhausted"
+          ]
+        }
+      }
+    },
+    "refusal_phrases": {
+      "BLOCKED_BY_CONDITION": "Мана на исходе. Нужно восстановиться."
+    }
+  },
+  "claim_refuge": {
+    "id": "claim_refuge",
+    "verbs": [
+      "закрепиться",
+      "обустроить убежище",
+      "активировать метку",
+      "занять убежище",
+      "основать убежище",
+      "забрать убежище"
+    ],
+    "attribute": "mag",
+    "base_requirement": 5,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Метка Системы вспыхивает. Пространство вокруг сжимается в карман, который теперь твой.",
+        "effects": {
+          "claim_refuge": true
+        }
+      },
+      "failure": {
+        "text": "Метка не отвечает. Место ещё не готово принять тебя.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Здесь нет метки Системы."
+    }
+  },
+  "enter_refuge": {
+    "id": "enter_refuge",
+    "verbs": [
+      "войти в убежище",
+      "вернуться в убежище",
+      "укрыться в убежище",
+      "открыть убежище",
+      "в убежище"
+    ],
+    "attribute": "mag",
+    "base_requirement": 3,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Пространство расступается, и ты оказываешься внутри убежища.",
+        "effects": {
+          "enter_refuge": true
+        }
+      },
+      "failure": {
+        "text": "Убежище не открывается. Ты остаёшься снаружи.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "У тебя пока нет убежища."
+    }
+  },
+  "leave_refuge": {
+    "id": "leave_refuge",
+    "verbs": [
+      "выйти из убежища",
+      "покинуть убежище",
+      "выйти наружу"
+    ],
+    "attribute": "agi",
+    "base_requirement": 3,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Дверь убежища открывается, и ты возвращаешься наружу.",
+        "effects": {
+          "leave_refuge": true
+        }
+      },
+      "failure": {
+        "text": "Выход не открывается. Ты остаёшься внутри.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "open_shop": {
+    "id": "open_shop",
+    "verbs": [
+      "открыть магазин",
+      "магазин",
+      "терминал",
+      "зайти в магазин",
+      "посмотреть ассортимент",
+      "торговый терминал"
+    ],
+    "attribute": "mag",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Терминал мигает, и перед тобой разворачивается список товаров.",
+        "effects": {
+          "ui": "shop"
+        }
+      },
+      "failure": {
+        "text": "Терминал не отвечает.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "scan": {
+    "id": "scan",
+    "verbs": [
+      "просканировать",
+      "скан",
+      "проверить систему",
+      "система",
+      "статус",
+      "проверить статус"
+    ],
+    "attribute": "mag",
+    "base_requirement": 3,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Система показывает то, что считает нужным показать.",
+        "effects": {
+          "scan": true
+        }
+      },
+      "failure": {
+        "text": "Система молчит.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "listen": {
+    "id": "listen",
+    "verbs": [
+      "слушать",
+      "прислушаться",
+      "замереть",
+      "уловить",
+      "слушаю",
+      "прислушиваюсь",
+      "вслушиваюсь"
+    ],
+    "attribute": "mag",
+    "base_requirement": 3,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты различаешь звуки, которые раньше сливались в фон.",
+        "effects": {
+          "listen": true
+        }
+      },
+      "failure": {
+        "text": "Тишина становится плотной и ничего не выдаёт.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "read": {
+    "id": "read",
+    "verbs": [
+      "читать",
+      "прочитать",
+      "изучить запись",
+      "посмотреть запись"
+    ],
+    "attribute": "mag",
+    "base_requirement": 2,
+    "needs_target": true,
+    "max_reach_m": 5,
+    "outcomes": {
+      "success": {
+        "text": "Ты читаешь то, что написано. Буквы складываются в смысл.",
+        "effects": {
+          "read": true
+        }
+      },
+      "failure": {
+        "text": "Текст расплывается или стёрт.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Здесь нечего читать."
+    }
+  },
+  "loot_reward": {
+    "id": "loot_reward",
+    "verbs": [
+      "взять награду",
+      "подобрать награду",
+      "открыть награду",
+      "забрать добычу"
+    ],
+    "attribute": "agi",
+    "base_requirement": 3,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты забираешь награду. Внутри что-то есть.",
+        "effects": {
+          "loot_reward": true
+        }
+      },
+      "failure": {
+        "text": "Награда не открывается или уже пуста.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "track": {
+    "id": "track",
+    "verbs": [
+      "выследить",
+      "идти по следам",
+      "найти следы",
+      "проследить"
+    ],
+    "attribute": "agi",
+    "base_requirement": 5,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты находишь след и понимаешь, куда он ведёт.",
+        "effects": {
+          "track": true
+        }
+      },
+      "failure": {
+        "text": "След теряется на твёрдой земле.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "recruit": {
+    "id": "recruit",
+    "verbs": [
+      "завербовать",
+      "позвать с собой",
+      "пригласить",
+      "взять в отряд"
+    ],
+    "attribute": "mag",
+    "base_requirement": 6,
+    "needs_target": true,
+    "max_reach_m": 10,
+    "outcomes": {
+      "success": {
+        "text": "Человек соглашается идти с тобой.",
+        "effects": {
+          "recruit": true
+        }
+      },
+      "failure": {
+        "text": "Человек качает головой и остаётся.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {
+      "UNKNOWN_TARGET": "Здесь некого звать."
+    }
+  },
+  "wait": {
+    "id": "wait",
+    "verbs": [
+      "ждать",
+      "подождать",
+      "переждать",
+      "выждать",
+      "жду",
+      "подожду",
+      "дожидаюсь"
+    ],
+    "attribute": "vit",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты ждёшь. Время идёт, мир не останавливается.",
+        "effects": {
+          "wait": true
+        }
+      },
+      "failure": {
+        "text": "Ожидание затягивается, и ты теряешь счёт времени.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": {}
+  },
+  "react": {
+    "verbs": [],
+    "attribute": "mag",
+    "base_requirement": 0,
+    "needs_target": false,
+    "outcomes": {
+      "success": {
+        "text": "Ты откликаешься на происходящее.",
+        "effects": {}
+      },
+      "failure": {
+        "text": "Мир не даёт ответа.",
+        "effects": {}
+      }
+    },
+    "refusal_phrases": [
+      "Ничего не выходит."
+    ]
+  }
+}

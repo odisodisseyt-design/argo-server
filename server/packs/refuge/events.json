@@ -1,0 +1,253 @@
+{
+  "events": [
+    {
+      "id": "first_kill",
+      "era": "E0",
+      "weight": 0,
+      "special": true,
+      "requires": {
+        "flags": [
+          "first_kill"
+        ],
+        "not_flags": [
+          "class_awakened"
+        ]
+      },
+      "journal": "Первый заражённый упал. Система открыла список классов.",
+      "rumor": "",
+      "text": "Система фиксирует первую цель. Доступен выбор класса.",
+      "effects": {
+        "class_selection": true
+      }
+    },
+    {
+      "id": "quiet_morning",
+      "era": "E0",
+      "weight": 20,
+      "requires": {
+        "time": {
+          "min_hour": 5,
+          "max_hour": 10
+        }
+      },
+      "journal": "",
+      "rumor": "Утро тихое. Такое бывает перед плохим.",
+      "text": "Утро выдалось тихим. Слишком тихим.",
+      "effects": {
+        "weather": "clear"
+      }
+    },
+    {
+      "id": "rain",
+      "era": "E0",
+      "weight": 18,
+      "requires": {},
+      "journal": "",
+      "rumor": "Дождь смывает следы. И запахи.",
+      "text": "Пошёл дождь. Он смывает следы и прибивает пыль.",
+      "effects": {
+        "weather": "rain",
+        "visibility": -10
+      }
+    },
+    {
+      "id": "fog",
+      "era": "E0",
+      "weight": 14,
+      "requires": {
+        "time": {
+          "min_hour": 4,
+          "max_hour": 9
+        }
+      },
+      "journal": "",
+      "rumor": "В тумане слышно, как кто-то ходит.",
+      "text": "Туман поднялся от земли. Видно на несколько шагов.",
+      "effects": {
+        "weather": "fog",
+        "visibility": -20
+      }
+    },
+    {
+      "id": "cold_snap",
+      "era": "E0",
+      "weight": 10,
+      "requires": {},
+      "journal": "",
+      "rumor": "Холод пришёл раньше срока. Люди жгут мебель.",
+      "text": "Похолодало. Дыхание стало паром.",
+      "effects": {
+        "temperature": -8,
+        "weather": "overcast"
+      }
+    },
+    {
+      "id": "supply_drop",
+      "era": "E0",
+      "weight": 8,
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      },
+      "journal": "Система сбросила контейнер с припасами.",
+      "rumor": "Говорят, Система сбросила ящик у школы. Кто-то уже видел.",
+      "text": "Где-то в городе Система сбросила контейнер.",
+      "effects": {
+        "spawn_loot": "school",
+        "add_item": {
+          "item": "reward_green",
+          "qty": 1
+        }
+      }
+    },
+    {
+      "id": "horde_passes",
+      "era": "E0",
+      "weight": 7,
+      "requires": {
+        "time": {
+          "min_hour": 18,
+          "max_hour": 23
+        }
+      },
+      "journal": "Мимо прошла стая заражённых.",
+      "rumor": "Ночью по улице шла стая. Не останавливалась.",
+      "text": "С улицы донёсся шорох множества шагов. Стая прошла мимо.",
+      "effects": {
+        "spawn": {
+          "location": "street",
+          "mob": "zombie",
+          "qty": 2
+        }
+      }
+    },
+    {
+      "id": "survivor_arrives",
+      "era": "E0",
+      "weight": 8,
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      },
+      "journal": "В городе появился новый выживший.",
+      "rumor": "Кто-то видел человека с фонарём. Он не заражён.",
+      "text": "В соседнем доме зажёгся фонарь. Кто-то ещё жив.",
+      "effects": {
+        "add_npc": true
+      }
+    },
+    {
+      "id": "radio_broadcast",
+      "era": "E0",
+      "weight": 9,
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      },
+      "journal": "Радио поймало обрывок чужого разговора.",
+      "rumor": "На частоте 103.5 говорят про убежище у больницы.",
+      "text": "Радио ожило. Сквозь помехи пробился чей-то голос.",
+      "effects": {
+        "knowledge": [
+          "убежище"
+        ],
+        "rumor": true
+      }
+    },
+    {
+      "id": "looters",
+      "era": "E0",
+      "weight": 6,
+      "requires": {
+        "time": {
+          "min_hour": 12,
+          "max_hour": 20
+        }
+      },
+      "journal": "Мародёры прошли рядом.",
+      "rumor": "Мародёры ищут склад. У них есть список.",
+      "text": "На дороге показались люди с мешками. Они не смотрели по сторонам.",
+      "effects": {
+        "faction": {
+          "id": "raiders",
+          "delta": -1
+        },
+        "spawn": {
+          "location": "road",
+          "mob": "looter",
+          "qty": 1
+        }
+      }
+    },
+    {
+      "id": "system_glitch",
+      "era": "E0",
+      "weight": 5,
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      },
+      "journal": "Система на секунду замолчала.",
+      "rumor": "Говорят, Система иногда теряет строки. И людей.",
+      "text": "Системные окна дрогнули и погасли. Через миг появились снова.",
+      "effects": {
+        "condition": "exhausted"
+      }
+    },
+    {
+      "id": "night_quiet",
+      "era": "E0",
+      "weight": 12,
+      "requires": {
+        "time": {
+          "min_hour": 23,
+          "max_hour": 4
+        }
+      },
+      "journal": "",
+      "rumor": "Ночь прошла без стука в дверь.",
+      "text": "Ночь прошла тихо. Только ветер трогал стекло.",
+      "effects": {
+        "rest_bonus": true
+      }
+    },
+    {
+      "id": "faction_patrol",
+      "era": "E1",
+      "weight": 10,
+      "requires": {
+        "era": "E1"
+      },
+      "journal": "Патруль Выживших прошёл по улице.",
+      "rumor": "Выжившие ставят метки на домах. Кто не ответил — того нет.",
+      "text": "По улице прошёл патруль. Люди в одинаковых куртках считали окна.",
+      "effects": {
+        "faction": {
+          "id": "survivors",
+          "delta": 1
+        }
+      }
+    },
+    {
+      "id": "ocean_tide",
+      "era": "E2",
+      "weight": 10,
+      "requires": {
+        "era": "E2"
+      },
+      "journal": "Вода в подвалах поднялась за ночь.",
+      "rumor": "В тоннелях слышно, как вода бьёт в гермодверь.",
+      "text": "Вода в подвале стоит по колено. Она не уходит.",
+      "effects": {
+        "weather": "fog",
+        "knowledge": [
+          "разлом"
+        ]
+      }
+    }
+  ]
+}

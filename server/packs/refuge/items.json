@@ -1,0 +1,1641 @@
+{
+  "bat": {
+    "id": "bat",
+    "name": "Бита",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Ободранная алюминиевая бита. Удобно держать двумя руками.",
+    "attack_bonus": 2,
+    "tags": [
+      "blunt"
+    ]
+  },
+  "knife_hunting": {
+    "id": "knife_hunting",
+    "name": "Охотничий нож",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.4,
+    "desc": "Тяжёлый нож в потёртых ножнах.",
+    "attack_bonus": 1,
+    "tags": [
+      "blade"
+    ]
+  },
+  "knife_swiss": {
+    "id": "knife_swiss",
+    "name": "Швейцарский нож",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Многофункциональный складной нож.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "hatchet": {
+    "id": "hatchet",
+    "name": "Топорик",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 1.2,
+    "desc": "Короткий топор для лагеря и для других дел.",
+    "attack_bonus": 2,
+    "craft_bonus": 1,
+    "tags": [
+      "blade"
+    ]
+  },
+  "shovel_folding": {
+    "id": "shovel_folding",
+    "name": "Складная лопата",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Лопата в чехле. Земля здесь мягкая.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "flashlight": {
+    "id": "flashlight",
+    "name": "Фонарь",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Пластиковый фонарь с треснувшим стеклом.",
+    "tags": [
+      "light"
+    ]
+  },
+  "radio": {
+    "id": "radio",
+    "name": "Радио",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.0,
+    "desc": "Старое радио. Иногда ловит голоса.",
+    "tags": [
+      "signal"
+    ]
+  },
+  "battery": {
+    "id": "battery",
+    "name": "Батарея",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Тяжёлая батарея. Ещё держит заряд.",
+    "tags": [
+      "power"
+    ]
+  },
+  "solar_panel": {
+    "id": "solar_panel",
+    "name": "Солнечная панель",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 6,
+    "desc": "Складная панель. Работает, пока есть свет.",
+    "tags": [
+      "power"
+    ]
+  },
+  "laptop": {
+    "id": "laptop",
+    "name": "Ноутбук",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 2.5,
+    "desc": "Ноутбук с наклейкой на крышке. Система его видит.",
+    "tags": [
+      "terminal"
+    ]
+  },
+  "lamp_oil": {
+    "id": "lamp_oil",
+    "name": "Масляная лампа",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Лампа с закопчённым стеклом.",
+    "tags": [
+      "light"
+    ]
+  },
+  "tent": {
+    "id": "tent",
+    "name": "Палатка",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 4,
+    "desc": "Двухместная палатка. Пахнет старой тканью.",
+    "tags": [
+      "shelter"
+    ]
+  },
+  "sleeping_bag": {
+    "id": "sleeping_bag",
+    "name": "Спальник",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Спальник, видавший лучшие ночи.",
+    "tags": [
+      "rest"
+    ]
+  },
+  "hammock": {
+    "id": "hammock",
+    "name": "Гамак",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Гамак с верёвками.",
+    "tags": [
+      "rest"
+    ]
+  },
+  "table": {
+    "id": "table",
+    "name": "Стол",
+    "kind": "furniture",
+    "era": "E0",
+    "weight_kg": 12,
+    "desc": "Складной стол. На нём удобно раскладывать карты.",
+    "tags": [
+      "furniture"
+    ]
+  },
+  "water_5l": {
+    "id": "water_5l",
+    "name": "Вода, 5 л",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 5,
+    "desc": "Канистра воды. Плещет при ходьбе.",
+    "tags": [
+      "water"
+    ],
+    "quantity": 1
+  },
+  "stew_can": {
+    "id": "stew_can",
+    "name": "Банка тушёнки",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.4,
+    "desc": "Металлическая банка без этикетки.",
+    "tags": [
+      "food"
+    ],
+    "quantity": 10
+  },
+  "bandage": {
+    "id": "bandage",
+    "name": "Бинт",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Стерильный бинт в бумажной упаковке.",
+    "tags": [
+      "medicine"
+    ],
+    "effect": {
+      "remove_conditions": [
+        "bleeding"
+      ]
+    }
+  },
+  "apulin_z10": {
+    "id": "apulin_z10",
+    "name": "Апулин Z-10",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Флакон с прозрачной жидкостью. Система называет его так.",
+    "tags": [
+      "medicine"
+    ],
+    "quantity": 30
+  },
+  "backpack": {
+    "id": "backpack",
+    "name": "Рюкзак",
+    "kind": "container",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Тканевый рюкзак с крепкими лямками.",
+    "tags": [
+      "carry"
+    ],
+    "carry_bonus": 10
+  },
+  "rope": {
+    "id": "rope",
+    "name": "Верёвка",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Моток верёвки. Ещё не распутана.",
+    "tags": [
+      "climb"
+    ]
+  },
+  "lighter": {
+    "id": "lighter",
+    "name": "Зажигалка",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Пластиковая зажигалка. Работает через раз.",
+    "tags": [
+      "fire"
+    ]
+  },
+  "matches": {
+    "id": "matches",
+    "name": "Спички",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Коробок спичек, наполовину пустой.",
+    "tags": [
+      "fire"
+    ],
+    "quantity": 1
+  },
+  "candle": {
+    "id": "candle",
+    "name": "Свеча",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Толстая свеча. Даёт мало света.",
+    "tags": [
+      "light"
+    ],
+    "quantity": 3
+  },
+  "pot": {
+    "id": "pot",
+    "name": "Котелок",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Металлический котелок с погнутой ручкой.",
+    "tags": [
+      "cook"
+    ]
+  },
+  "bowl": {
+    "id": "bowl",
+    "name": "Миска",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Эмалированная миска со сколом.",
+    "tags": [
+      "cook"
+    ]
+  },
+  "clothes": {
+    "id": "clothes",
+    "name": "Одежда",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Простая одежда. Уже не новая.",
+    "armor": 1,
+    "tags": [
+      "armor"
+    ]
+  },
+  "boots": {
+    "id": "boots",
+    "name": "Ботинки",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 1.2,
+    "desc": "Крепкие ботинки. Подошва держит.",
+    "armor": 1,
+    "tags": [
+      "armor"
+    ]
+  },
+  "jacket": {
+    "id": "jacket",
+    "name": "Куртка",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Плотная куртка с капюшоном.",
+    "armor": 1,
+    "tags": [
+      "armor"
+    ]
+  },
+  "gloves": {
+    "id": "gloves",
+    "name": "Перчатки",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Рабочие перчатки.",
+    "armor": 1,
+    "tags": [
+      "armor"
+    ]
+  },
+  "gas_mask": {
+    "id": "gas_mask",
+    "name": "Противогаз",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 1.8,
+    "desc": "Противогаз с одним целым фильтром.",
+    "armor": 1,
+    "tags": [
+      "mask"
+    ]
+  },
+  "map_paper": {
+    "id": "map_paper",
+    "name": "Карта",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Мятая карта города. На полях чьи-то пометки.",
+    "tags": [
+      "map"
+    ]
+  },
+  "compass": {
+    "id": "compass",
+    "name": "Компас",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Компас с поцарапанным стеклом.",
+    "tags": [
+      "navigate"
+    ]
+  },
+  "notebook": {
+    "id": "notebook",
+    "name": "Блокнот",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Блокнот в клетку. Половина страниц пуста.",
+    "tags": [
+      "write"
+    ]
+  },
+  "pencil": {
+    "id": "pencil",
+    "name": "Карандаш",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Огрызок карандаша.",
+    "tags": [
+      "write"
+    ]
+  },
+  "first_aid_kit": {
+    "id": "first_aid_kit",
+    "name": "Аптечка",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Аптечка с бинтами, жгутом и парой ампул.",
+    "tags": [
+      "medicine"
+    ],
+    "heal_bonus": 2
+  },
+  "antibiotics": {
+    "id": "antibiotics",
+    "name": "Антибиотики",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Упаковка таблеток. Срок годности стёрт.",
+    "tags": [
+      "medicine"
+    ],
+    "effect": {
+      "remove_conditions": [
+        "virus"
+      ]
+    },
+    "quantity": 2
+  },
+  "painkiller": {
+    "id": "painkiller",
+    "name": "Обезболивающее",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Пластинка таблеток.",
+    "tags": [
+      "medicine"
+    ],
+    "quantity": 4
+  },
+  "antiseptic": {
+    "id": "antiseptic",
+    "name": "Антисептик",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Флакон с резким запахом.",
+    "tags": [
+      "medicine"
+    ],
+    "quantity": 1
+  },
+  "needle_thread": {
+    "id": "needle_thread",
+    "name": "Иголка и нить",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Маленький набор для шитья.",
+    "tags": [
+      "craft"
+    ]
+  },
+  "water_filter": {
+    "id": "water_filter",
+    "name": "Фильтр для воды",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.2,
+    "desc": "Самодельный фильтр из бутылки и угля.",
+    "tags": [
+      "water"
+    ]
+  },
+  "fishing_rod": {
+    "id": "fishing_rod",
+    "name": "Удочка",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Складная удочка.",
+    "tags": [
+      "fish"
+    ]
+  },
+  "seeds_vegetables": {
+    "id": "seeds_vegetables",
+    "name": "Семена овощей",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Пакетик семян. На упаковке — морковь.",
+    "tags": [
+      "farm"
+    ]
+  },
+  "canned_fish": {
+    "id": "canned_fish",
+    "name": "Консервы рыбные",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Банка с рыбой в масле.",
+    "tags": [
+      "food"
+    ],
+    "quantity": 3
+  },
+  "crackers": {
+    "id": "crackers",
+    "name": "Галеты",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Сухие галеты в картонной коробке.",
+    "tags": [
+      "food"
+    ],
+    "quantity": 4
+  },
+  "tea": {
+    "id": "tea",
+    "name": "Чай",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Пачка чая. Почти пустая.",
+    "tags": [
+      "drink"
+    ]
+  },
+  "coffee": {
+    "id": "coffee",
+    "name": "Кофе",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Банка растворимого кофе.",
+    "tags": [
+      "drink"
+    ]
+  },
+  "sugar": {
+    "id": "sugar",
+    "name": "Сахар",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Килограмм сахара в бумажном пакете.",
+    "tags": [
+      "food"
+    ]
+  },
+  "salt": {
+    "id": "salt",
+    "name": "Соль",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Пачка соли.",
+    "tags": [
+      "food"
+    ]
+  },
+  "flour": {
+    "id": "flour",
+    "name": "Мука",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Пакет муки.",
+    "tags": [
+      "food"
+    ]
+  },
+  "rice": {
+    "id": "rice",
+    "name": "Рис",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Пакет риса.",
+    "tags": [
+      "food"
+    ]
+  },
+  "buckwheat": {
+    "id": "buckwheat",
+    "name": "Гречка",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Пакет гречки.",
+    "tags": [
+      "food"
+    ]
+  },
+  "oil": {
+    "id": "oil",
+    "name": "Масло",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Бутылка растительного масла.",
+    "tags": [
+      "food"
+    ]
+  },
+  "vinegar": {
+    "id": "vinegar",
+    "name": "Уксус",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Бутылка уксуса.",
+    "tags": [
+      "craft"
+    ]
+  },
+  "soap": {
+    "id": "soap",
+    "name": "Мыло",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Кусок мыла.",
+    "tags": [
+      "hygiene"
+    ]
+  },
+  "toothpaste": {
+    "id": "toothpaste",
+    "name": "Зубная паста",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Тюбик пасты.",
+    "tags": [
+      "hygiene"
+    ]
+  },
+  "toilet_paper": {
+    "id": "toilet_paper",
+    "name": "Туалетная бумага",
+    "kind": "consumable",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Рулон. В этом мире это валюта.",
+    "tags": [
+      "hygiene"
+    ]
+  },
+  "duct_tape": {
+    "id": "duct_tape",
+    "name": "Скотч",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Рулон серого скотча.",
+    "tags": [
+      "craft"
+    ]
+  },
+  "wire": {
+    "id": "wire",
+    "name": "Проволока",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.3,
+    "desc": "Моток проволоки.",
+    "tags": [
+      "craft"
+    ]
+  },
+  "nails": {
+    "id": "nails",
+    "name": "Гвозди",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.4,
+    "desc": "Горсть гвоздей.",
+    "tags": [
+      "craft"
+    ],
+    "quantity": 20
+  },
+  "hammer": {
+    "id": "hammer",
+    "name": "Молоток",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Молоток с деревянной ручкой.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "saw": {
+    "id": "saw",
+    "name": "Пила",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.2,
+    "desc": "Ручная пила.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "axe": {
+    "id": "axe",
+    "name": "Топор",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 2.5,
+    "desc": "Большой топор. Тяжёлый, но убедительный.",
+    "attack_bonus": 3,
+    "craft_bonus": 1,
+    "tags": [
+      "blade"
+    ]
+  },
+  "crowbar": {
+    "id": "crowbar",
+    "name": "Лом",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 3,
+    "desc": "Лом. Открывает двери и головы.",
+    "attack_bonus": 3,
+    "craft_bonus": 1,
+    "tags": [
+      "blunt"
+    ]
+  },
+  "screwdriver_set": {
+    "id": "screwdriver_set",
+    "name": "Набор отвёрток",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Отвёртки в потёртом чехле.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "wrench": {
+    "id": "wrench",
+    "name": "Гаечный ключ",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Ключ с разводным зевом.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "tarp": {
+    "id": "tarp",
+    "name": "Брезент",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 3,
+    "desc": "Кусок брезента.",
+    "tags": [
+      "shelter"
+    ]
+  },
+  "sandbag": {
+    "id": "sandbag",
+    "name": "Мешок с песком",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 15,
+    "desc": "Тяжёлый мешок.",
+    "tags": [
+      "fortify"
+    ]
+  },
+  "concrete": {
+    "id": "concrete",
+    "name": "Бетон",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 20,
+    "desc": "Мешок бетонной смеси.",
+    "tags": [
+      "build"
+    ]
+  },
+  "brick": {
+    "id": "brick",
+    "name": "Кирпич",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 3,
+    "desc": "Один кирпич.",
+    "tags": [
+      "build"
+    ]
+  },
+  "lumber": {
+    "id": "lumber",
+    "name": "Доска",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 4,
+    "desc": "Доска с гвоздями.",
+    "tags": [
+      "build"
+    ]
+  },
+  "metal_sheet": {
+    "id": "metal_sheet",
+    "name": "Лист металла",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 8,
+    "desc": "Ржавый лист металла.",
+    "tags": [
+      "build"
+    ]
+  },
+  "glass": {
+    "id": "glass",
+    "name": "Стекло",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Кусок толстого стекла.",
+    "tags": [
+      "build"
+    ]
+  },
+  "coal": {
+    "id": "coal",
+    "name": "Уголь",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Мешок угля.",
+    "tags": [
+      "fuel"
+    ]
+  },
+  "firewood": {
+    "id": "firewood",
+    "name": "Дрова",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 5,
+    "desc": "Охапка дров.",
+    "tags": [
+      "fuel"
+    ]
+  },
+  "generator_small": {
+    "id": "generator_small",
+    "name": "Малый генератор",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 18,
+    "desc": "Бензиновый генератор. Шумит.",
+    "tags": [
+      "power"
+    ]
+  },
+  "fuel_can": {
+    "id": "fuel_can",
+    "name": "Канистра топлива",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 5,
+    "desc": "Канистра с бензином.",
+    "tags": [
+      "fuel"
+    ]
+  },
+  "binoculars": {
+    "id": "binoculars",
+    "name": "Бинокль",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Бинокль с трещиной на линзе.",
+    "tags": [
+      "scout"
+    ]
+  },
+  "watch": {
+    "id": "watch",
+    "name": "Часы",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Механические часы. Идут.",
+    "tags": [
+      "time"
+    ]
+  },
+  "camera": {
+    "id": "camera",
+    "name": "Фотоаппарат",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.6,
+    "desc": "Старый фотоаппарат. Система принимает снимки.",
+    "tags": [
+      "system"
+    ]
+  },
+  "bow_hunting": {
+    "id": "bow_hunting",
+    "name": "Охотничий лук",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Простой лук. Тетива натянута.",
+    "attack_bonus": 2,
+    "ranged": true,
+    "tags": [
+      "bow"
+    ]
+  },
+  "crossbow": {
+    "id": "crossbow",
+    "name": "Арбалет",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 3,
+    "desc": "Арбалет с ручным взводом.",
+    "attack_bonus": 3,
+    "ranged": true,
+    "tags": [
+      "crossbow"
+    ]
+  },
+  "sling": {
+    "id": "sling",
+    "name": "Праща",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Кожаная праща.",
+    "attack_bonus": 1,
+    "ranged": true,
+    "tags": [
+      "sling"
+    ]
+  },
+  "javelin": {
+    "id": "javelin",
+    "name": "Дротик",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Короткий дротик.",
+    "attack_bonus": 1,
+    "ranged": true,
+    "tags": [
+      "throw"
+    ]
+  },
+  "throwing_knives": {
+    "id": "throwing_knives",
+    "name": "Метательные ножи",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Три ножа в чехле.",
+    "attack_bonus": 1,
+    "ranged": true,
+    "tags": [
+      "throw"
+    ],
+    "quantity": 3
+  },
+  "molotov": {
+    "id": "molotov",
+    "name": "Бутылка с зажигательной смесью",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.6,
+    "desc": "Самодельная зажигательная бутылка.",
+    "attack_bonus": 2,
+    "ranged": true,
+    "tags": [
+      "fire"
+    ]
+  },
+  "net": {
+    "id": "net",
+    "name": "Сеть",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Сеть с грузилами.",
+    "tags": [
+      "trap"
+    ]
+  },
+  "spear": {
+    "id": "spear",
+    "name": "Копьё",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Длинное копьё с металлическим наконечником.",
+    "attack_bonus": 2,
+    "tags": [
+      "polearm"
+    ]
+  },
+  "shield_wood": {
+    "id": "shield_wood",
+    "name": "Деревянный щит",
+    "kind": "armor",
+    "era": "E0",
+    "weight_kg": 4,
+    "desc": "Щит из досок, обитый жестью.",
+    "armor": 2,
+    "tags": [
+      "shield"
+    ]
+  },
+  "sword_rusty": {
+    "id": "sword_rusty",
+    "name": "Ржавый меч",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 2.2,
+    "desc": "Меч из чьей-то коллекции. Ржавчина не мешает.",
+    "attack_bonus": 2,
+    "tags": [
+      "blade"
+    ]
+  },
+  "hammer_war": {
+    "id": "hammer_war",
+    "name": "Боевой молот",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 4,
+    "desc": "Тяжёлый молот. Для работы и для боя.",
+    "attack_bonus": 3,
+    "tags": [
+      "blunt"
+    ]
+  },
+  "polearm": {
+    "id": "polearm",
+    "name": "Древковое оружие",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 3,
+    "desc": "Длинное древко с лезвием.",
+    "attack_bonus": 2,
+    "tags": [
+      "polearm"
+    ]
+  },
+  "bola": {
+    "id": "bola",
+    "name": "Болас",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.8,
+    "desc": "Три грузила на верёвках.",
+    "attack_bonus": 1,
+    "ranged": true,
+    "tags": [
+      "throw"
+    ]
+  },
+  "blowgun": {
+    "id": "blowgun",
+    "name": "Духовая трубка",
+    "kind": "weapon",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Трубка с набором дротиков.",
+    "attack_bonus": 1,
+    "ranged": true,
+    "tags": [
+      "poison"
+    ]
+  },
+  "herb_bundle": {
+    "id": "herb_bundle",
+    "name": "Пучок трав",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Сушёные травы. Пахнут горько.",
+    "tags": [
+      "medicine"
+    ]
+  },
+  "splint": {
+    "id": "splint",
+    "name": "Шина",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.5,
+    "desc": "Две дощечки и бинт.",
+    "tags": [
+      "medicine"
+    ]
+  },
+  "tourniquet": {
+    "id": "tourniquet",
+    "name": "Жгут",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Резиновый жгут.",
+    "tags": [
+      "medicine"
+    ]
+  },
+  "syringe": {
+    "id": "syringe",
+    "name": "Шприц",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 0.05,
+    "desc": "Одноразовый шприц.",
+    "tags": [
+      "medicine"
+    ]
+  },
+  "surgical_kit": {
+    "id": "surgical_kit",
+    "name": "Хирургический набор",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Скальпель, зажимы, нить.",
+    "tags": [
+      "medicine"
+    ],
+    "heal_bonus": 3
+  },
+  "rabbit": {
+    "id": "rabbit",
+    "name": "Кролик",
+    "kind": "animal",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Живой кролик. Система продаёт их по одному.",
+    "tags": [
+      "farm"
+    ]
+  },
+  "chicken": {
+    "id": "chicken",
+    "name": "Курица",
+    "kind": "animal",
+    "era": "E0",
+    "weight_kg": 1.5,
+    "desc": "Курица. Несётся, если кормить.",
+    "tags": [
+      "farm"
+    ]
+  },
+  "fertilizer": {
+    "id": "fertilizer",
+    "name": "Удобрение",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 2,
+    "desc": "Мешок удобрения.",
+    "tags": [
+      "farm"
+    ]
+  },
+  "empty_bottle": {
+    "id": "empty_bottle",
+    "name": "Пустая бутылка",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.4,
+    "desc": "Стеклянная бутылка.",
+    "tags": [
+      "craft"
+    ],
+    "quantity": 5
+  },
+  "can_empty": {
+    "id": "can_empty",
+    "name": "Пустая банка",
+    "kind": "material",
+    "era": "E0",
+    "weight_kg": 0.1,
+    "desc": "Жестяная банка.",
+    "tags": [
+      "craft"
+    ],
+    "quantity": 5
+  },
+  "dishes": {
+    "id": "dishes",
+    "name": "Посуда",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Набор посуды из шкафа.",
+    "tags": [
+      "home"
+    ]
+  },
+  "field_plot": {
+    "id": "field_plot",
+    "name": "Поле",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Системный участок под посадки. Один гектар.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "expansion_hectare": {
+    "id": "expansion_hectare",
+    "name": "Расширение убежища",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Ещё один гектар пространства.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "planner_l1": {
+    "id": "planner_l1",
+    "name": "Планировщик",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Системный планировщик задач.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "laptop_l1": {
+    "id": "laptop_l1",
+    "name": "Ноутбук Системы",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Системный ноутбук. Уровень 1.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "rabbit_pen": {
+    "id": "rabbit_pen",
+    "name": "Клетка для кроликов",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Системная клетка.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "rabbit_feeder": {
+    "id": "rabbit_feeder",
+    "name": "Кормушка",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Системная кормушка.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "mineral_spring": {
+    "id": "mineral_spring",
+    "name": "Минеральный источник",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Источник чистой воды внутри убежища.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "bottomless_pit": {
+    "id": "bottomless_pit",
+    "name": "Бездонная яма",
+    "kind": "module",
+    "era": "E0",
+    "weight_kg": 0,
+    "desc": "Яма, в которую можно сбрасывать отходы.",
+    "tags": [
+      "refuge"
+    ],
+    "module": true
+  },
+  "reward_white": {
+    "id": "reward_white",
+    "name": "Белая награда",
+    "kind": "reward",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Матовый белый контейнер.",
+    "tags": [
+      "reward"
+    ]
+  },
+  "reward_green": {
+    "id": "reward_green",
+    "name": "Зелёная награда",
+    "kind": "reward",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Зелёный контейнер с мягким свечением.",
+    "tags": [
+      "reward"
+    ]
+  },
+  "reward_blue": {
+    "id": "reward_blue",
+    "name": "Синяя награда",
+    "kind": "reward",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Синий контейнер. Холодит ладонь.",
+    "tags": [
+      "reward"
+    ]
+  },
+  "reward_purple": {
+    "id": "reward_purple",
+    "name": "Фиолетовая награда",
+    "kind": "reward",
+    "era": "E0",
+    "weight_kg": 0.2,
+    "desc": "Фиолетовый контейнер. Внутри что-то шевелится.",
+    "tags": [
+      "reward"
+    ]
+  },
+  "coin_survivor": {
+    "id": "coin_survivor",
+    "name": "Монета выжившего",
+    "kind": "currency",
+    "era": "E0",
+    "weight_kg": 0.01,
+    "desc": "Монета с профилем человека и надписью на обороте.",
+    "tags": [
+      "currency"
+    ]
+  },
+  "scrap_tool": {
+    "id": "scrap_tool",
+    "name": "Самодельный инструмент",
+    "kind": "tool",
+    "era": "E0",
+    "weight_kg": 1,
+    "desc": "Собран из того, что было под рукой.",
+    "craft_bonus": 1,
+    "tags": [
+      "tool"
+    ]
+  },
+  "pistol": {
+    "id": "pistol",
+    "name": "Пистолет",
+    "kind": "weapon",
+    "era": "E1",
+    "weight_kg": 1.2,
+    "desc": "Пистолет без клейма. Патроны к нему — отдельная проблема.",
+    "attack_bonus": 5,
+    "ranged": true,
+    "tags": [
+      "gun"
+    ]
+  },
+  "rifle": {
+    "id": "rifle",
+    "name": "Винтовка",
+    "kind": "weapon",
+    "era": "E1",
+    "weight_kg": 4,
+    "desc": "Винтовка с оптикой. Тяжёлая.",
+    "attack_bonus": 6,
+    "ranged": true,
+    "tags": [
+      "gun"
+    ]
+  },
+  "shotgun": {
+    "id": "shotgun",
+    "name": "Дробовик",
+    "kind": "weapon",
+    "era": "E1",
+    "weight_kg": 3.5,
+    "desc": "Дробовик. Громкий и убедительный.",
+    "attack_bonus": 6,
+    "ranged": true,
+    "tags": [
+      "gun"
+    ]
+  },
+  "ammo_9mm": {
+    "id": "ammo_9mm",
+    "name": "Патроны 9 мм",
+    "kind": "material",
+    "era": "E1",
+    "weight_kg": 0.2,
+    "desc": "Коробка патронов.",
+    "tags": [
+      "ammo"
+    ],
+    "quantity": 12
+  },
+  "ammo_12g": {
+    "id": "ammo_12g",
+    "name": "Патроны 12-го калибра",
+    "kind": "material",
+    "era": "E1",
+    "weight_kg": 0.3,
+    "desc": "Коробка дробовых патронов.",
+    "tags": [
+      "ammo"
+    ],
+    "quantity": 8
+  },
+  "armor_plate": {
+    "id": "armor_plate",
+    "name": "Бронепластина",
+    "kind": "armor",
+    "era": "E1",
+    "weight_kg": 6,
+    "desc": "Тяжёлая пластина. Держит удар.",
+    "armor": 4,
+    "tags": [
+      "armor"
+    ]
+  },
+  "ballistic_vest": {
+    "id": "ballistic_vest",
+    "name": "Бронежилет",
+    "kind": "armor",
+    "era": "E1",
+    "weight_kg": 8,
+    "desc": "Бронежилет без опознавательных знаков.",
+    "armor": 5,
+    "tags": [
+      "armor"
+    ]
+  },
+  "helmet": {
+    "id": "helmet",
+    "name": "Шлем",
+    "kind": "armor",
+    "era": "E1",
+    "weight_kg": 2,
+    "desc": "Защитный шлем.",
+    "armor": 2,
+    "tags": [
+      "armor"
+    ]
+  },
+  "night_vision": {
+    "id": "night_vision",
+    "name": "Прибор ночного видения",
+    "kind": "tool",
+    "era": "E1",
+    "weight_kg": 1.5,
+    "desc": "Зелёный мир в окуляре.",
+    "tags": [
+      "scout"
+    ]
+  },
+  "radio_station": {
+    "id": "radio_station",
+    "name": "Радиостанция",
+    "kind": "tool",
+    "era": "E1",
+    "weight_kg": 5,
+    "desc": "Мощная радиостанция. Ловит дальние голоса.",
+    "tags": [
+      "signal"
+    ]
+  },
+  "drone": {
+    "id": "drone",
+    "name": "Дрон",
+    "kind": "tool",
+    "era": "E1",
+    "weight_kg": 2,
+    "desc": "Небольшой дрон с камерой.",
+    "tags": [
+      "scout"
+    ]
+  },
+  "drone_battery": {
+    "id": "drone_battery",
+    "name": "Батарея дрона",
+    "kind": "material",
+    "era": "E1",
+    "weight_kg": 0.5,
+    "desc": "Сменная батарея.",
+    "tags": [
+      "power"
+    ]
+  },
+  "tech_module": {
+    "id": "tech_module",
+    "name": "Техномодуль",
+    "kind": "material",
+    "era": "E4",
+    "weight_kg": 1,
+    "desc": "Металлический модуль с чужими разъёмами.",
+    "tags": [
+      "tech"
+    ]
+  },
+  "neural_interface": {
+    "id": "neural_interface",
+    "name": "Нейроинтерфейс",
+    "kind": "tool",
+    "era": "E4",
+    "weight_kg": 0.5,
+    "desc": "Устройство для связи с машинами.",
+    "tags": [
+      "tech"
+    ]
+  },
+  "cyber_arm": {
+    "id": "cyber_arm",
+    "name": "Кибернетическая рука",
+    "kind": "armor",
+    "era": "E4",
+    "weight_kg": 3,
+    "desc": "Рука из металла и света.",
+    "armor": 3,
+    "tags": [
+      "tech"
+    ]
+  },
+  "spatial_shard": {
+    "id": "spatial_shard",
+    "name": "Осколок пространства",
+    "kind": "material",
+    "era": "E2",
+    "weight_kg": 0.5,
+    "desc": "Кусок мира, который не должен помещаться в ладони.",
+    "tags": [
+      "spatial"
+    ]
+  },
+  "ark_key": {
+    "id": "ark_key",
+    "name": "Ключ Ковчега",
+    "kind": "key",
+    "era": "E3",
+    "weight_kg": 0.3,
+    "desc": "Ключ, который открывает не дверь, а целый осколок.",
+    "tags": [
+      "key"
+    ]
+  },
+  "ocean_map": {
+    "id": "ocean_map",
+    "name": "Карта океана",
+    "kind": "tool",
+    "era": "E2",
+    "weight_kg": 0.2,
+    "desc": "Карта течений, которых нет.",
+    "tags": [
+      "map"
+    ]
+  },
+  "mana_crystal": {
+    "id": "mana_crystal",
+    "name": "Кристалл маны",
+    "kind": "material",
+    "era": "E2",
+    "weight_kg": 0.3,
+    "desc": "Кристалл, в котором плещется свет.",
+    "tags": [
+      "mana"
+    ]
+  },
+  "rune_blank": {
+    "id": "rune_blank",
+    "name": "Заготовка руны",
+    "kind": "material",
+    "era": "E1",
+    "weight_kg": 0.2,
+    "desc": "Гладкая пластина под руну.",
+    "tags": [
+      "rune"
+    ]
+  },
+  "admin_key": {
+    "id": "admin_key",
+    "name": "Ключ Администратора",
+    "kind": "key",
+    "era": "E5",
+    "weight_kg": 0.1,
+    "desc": "Ключ без замка. Пока.",
+    "tags": [
+      "key"
+    ]
+  },
+  "void_stone": {
+    "id": "void_stone",
+    "name": "Камень пустоты",
+    "kind": "material",
+    "era": "E2",
+    "weight_kg": 0.4,
+    "desc": "Камень, который не отбрасывает тени.",
+    "tags": [
+      "void"
+    ]
+  }
+}

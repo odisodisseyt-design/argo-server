@@ -1,0 +1,9 @@
+{
+  "id": "demo",
+  "name": "Эхо Поляны",
+  "language": "ru",
+  "version": "0.1.0",
+  "author": "Text World",
+  "license": "MIT",
+  "description": "Минимальный тестовый мир для проверки движка."
+}

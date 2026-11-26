@@ -1,0 +1,234 @@
+{
+  "quests": [
+    {
+      "id": "first_hour",
+      "name": "Первый час",
+      "type": "main",
+      "desc": "Система пришла, а мир ещё не понял, что умер. Осмотрись и переживи первую встречу.",
+      "objectives": [
+        {
+          "text": "Осмотреться",
+          "flag": "looked_around"
+        },
+        {
+          "text": "Встретить заражённого",
+          "flag": "met_zombie"
+        }
+      ],
+      "reward": {
+        "xp": 5,
+        "coins": 5
+      },
+      "requires": {}
+    },
+    {
+      "id": "first_kill",
+      "name": "Первая кровь",
+      "type": "main",
+      "desc": "Первый заражённый должен упасть. Система обещает за это нечто большее, чем опыт.",
+      "objectives": [
+        {
+          "text": "Победить заражённого",
+          "flag": "first_kill"
+        },
+        {
+          "text": "Открыть список классов",
+          "flag": "class_offered"
+        }
+      ],
+      "reward": {
+        "xp": 10,
+        "coins": 10
+      },
+      "requires": {}
+    },
+    {
+      "id": "choose_path",
+      "name": "Свой путь",
+      "type": "main",
+      "desc": "Система предлагает классы. Выбор останется с тобой надолго.",
+      "objectives": [
+        {
+          "text": "Выбрать класс",
+          "flag": "class_chosen"
+        }
+      ],
+      "reward": {
+        "xp": 10,
+        "coins": 0
+      },
+      "requires": {
+        "flags": [
+          "first_kill"
+        ]
+      }
+    },
+    {
+      "id": "roof",
+      "name": "Крыша над головой",
+      "type": "main",
+      "desc": "Убежища нет. Его нужно найти, забрать или построить. Система уже отметила несколько мест.",
+      "objectives": [
+        {
+          "text": "Найти метку Системы",
+          "knowledge": "убежище"
+        },
+        {
+          "text": "Закрепиться в убежище",
+          "flag": "refuge_claimed"
+        }
+      ],
+      "reward": {
+        "xp": 25,
+        "coins": 50
+      },
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      }
+    },
+    {
+      "id": "first_night",
+      "name": "Первая ночь",
+      "type": "side",
+      "desc": "Ночь покажет, чего стоит твоё укрытие.",
+      "objectives": [
+        {
+          "text": "Пережить ночь",
+          "flag": "survived_night"
+        },
+        {
+          "text": "Найти воду",
+          "knowledge": "вода"
+        }
+      ],
+      "reward": {
+        "xp": 15,
+        "coins": 20
+      },
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      }
+    },
+    {
+      "id": "radio_voice",
+      "name": "Голос в эфире",
+      "type": "side",
+      "desc": "Радио ловит обрывки чужих разговоров. Один из них повторяется.",
+      "objectives": [
+        {
+          "text": "Включить радио",
+          "flag": "radio_on"
+        },
+        {
+          "text": "Услышать об океане",
+          "knowledge": "пространственный океан"
+        }
+      ],
+      "reward": {
+        "xp": 20,
+        "coins": 30
+      },
+      "requires": {
+        "flags": [
+          "class_chosen"
+        ]
+      }
+    },
+    {
+      "id": "ocean_gate",
+      "name": "За окраиной",
+      "type": "main",
+      "desc": "За кольцом — не море. Нужно увидеть океан собственными глазами.",
+      "objectives": [
+        {
+          "text": "Дойти до кольцевой дороги",
+          "flag": "reached_outskirts"
+        },
+        {
+          "text": "Увидеть пространственный океан",
+          "knowledge": "пространственный океан"
+        }
+      ],
+      "reward": {
+        "xp": 100,
+        "coins": 300
+      },
+      "requires": {
+        "era": "E1"
+      }
+    },
+    {
+      "id": "ark",
+      "name": "Ковчеги",
+      "type": "main",
+      "desc": "Из океана поднялись Ковчеги. Внутрь пускают не всех.",
+      "objectives": [
+        {
+          "text": "Найти Ковчег",
+          "flag": "ark_found"
+        },
+        {
+          "text": "Войти в зал Ковчега",
+          "flag": "ark_entered"
+        }
+      ],
+      "reward": {
+        "xp": 300,
+        "coins": 1000
+      },
+      "requires": {
+        "era": "E2"
+      }
+    },
+    {
+      "id": "techno",
+      "name": "Техномир",
+      "type": "main",
+      "desc": "За дверью Ковчега — металл, свет и чужие инструкции.",
+      "objectives": [
+        {
+          "text": "Открыть технический коридор",
+          "flag": "techno_gate"
+        },
+        {
+          "text": "Войти в Гарнизон",
+          "flag": "techno_entered"
+        }
+      ],
+      "reward": {
+        "xp": 1000,
+        "coins": 5000
+      },
+      "requires": {
+        "era": "E3"
+      }
+    },
+    {
+      "id": "administrator",
+      "name": "Администратор",
+      "type": "main",
+      "desc": "Кто-то смотрит на мир сверху и ведёт учёт.",
+      "objectives": [
+        {
+          "text": "Услышать сигнал Истока",
+          "flag": "admin_signal"
+        },
+        {
+          "text": "Дойти до Ядра",
+          "flag": "admin_core"
+        }
+      ],
+      "reward": {
+        "xp": 5000,
+        "coins": 20000
+      },
+      "requires": {
+        "era": "E4"
+      }
+    }
+  ]
+}

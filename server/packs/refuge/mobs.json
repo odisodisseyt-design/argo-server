@@ -1,0 +1,285 @@
+{
+  "zombie": {
+    "id": "zombie",
+    "name": "Заражённый",
+    "era": "E0",
+    "level": 1,
+    "desc": "Медленный, но упорный. Идёт на звук.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "zombie_common",
+    "tags": [
+      "infected",
+      "humanoid"
+    ],
+    "aliases": [
+      "зомби",
+      "заражённый",
+      "зараженный"
+    ]
+  },
+  "zombie_fast": {
+    "id": "zombie_fast",
+    "name": "Быстрый заражённый",
+    "era": "E0",
+    "level": 2,
+    "desc": "Двигается рывками. Опасен на короткой дистанции.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "zombie_common",
+    "tags": [
+      "infected",
+      "humanoid"
+    ],
+    "aliases": [
+      "зомби",
+      "заражённый",
+      "зараженный"
+    ]
+  },
+  "zombie_brute": {
+    "id": "zombie_brute",
+    "name": "Тяжёлый заражённый",
+    "era": "E0",
+    "level": 3,
+    "desc": "Раздутое тело, которое трудно свалить.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "zombie_rare",
+    "tags": [
+      "infected",
+      "brute"
+    ],
+    "aliases": [
+      "зомби",
+      "заражённый",
+      "зараженный"
+    ]
+  },
+  "infected_dog": {
+    "id": "infected_dog",
+    "name": "Заражённая собака",
+    "era": "E0",
+    "level": 1,
+    "desc": "Собака с облезлой шерстью. Рычит и кружит.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "animal_common",
+    "tags": [
+      "infected",
+      "beast"
+    ]
+  },
+  "rat_giant": {
+    "id": "rat_giant",
+    "name": "Крыса-мутант",
+    "era": "E0",
+    "level": 1,
+    "desc": "Крыса размером с кошку. Держится стаей.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "animal_common",
+    "tags": [
+      "beast"
+    ]
+  },
+  "crow_flock": {
+    "id": "crow_flock",
+    "name": "Стая ворон",
+    "era": "E0",
+    "level": 1,
+    "desc": "Вороны сбиваются в стаю и падают сверху.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "animal_common",
+    "tags": [
+      "beast",
+      "fly"
+    ]
+  },
+  "looter": {
+    "id": "looter",
+    "name": "Мародёр",
+    "era": "E0",
+    "level": 2,
+    "desc": "Человек с арматурой. Не заражён, но голоден.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "human_common",
+    "tags": [
+      "human",
+      "hostile"
+    ]
+  },
+  "raider": {
+    "id": "raider",
+    "name": "Рейдер",
+    "era": "E1",
+    "level": 4,
+    "desc": "Вооружённый человек из банды. Держится группой.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "human_rare",
+    "tags": [
+      "human",
+      "hostile"
+    ]
+  },
+  "mutant_dog": {
+    "id": "mutant_dog",
+    "name": "Мутировавшая собака",
+    "era": "E1",
+    "level": 3,
+    "desc": "Слишком много зубов для одной собаки.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "animal_rare",
+    "tags": [
+      "beast",
+      "mutant"
+    ]
+  },
+  "spore_walker": {
+    "id": "spore_walker",
+    "name": "Спороход",
+    "era": "E1",
+    "level": 5,
+    "desc": "Тело, из которого растут бледные грибы.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "mutant_rare",
+    "tags": [
+      "mutant"
+    ]
+  },
+  "ocean_leech": {
+    "id": "ocean_leech",
+    "name": "Океанская пиявка",
+    "era": "E2",
+    "level": 6,
+    "desc": "Длинное тело в стоячей воде. Присасывается к теплу.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "ocean_common",
+    "tags": [
+      "ocean"
+    ]
+  },
+  "shard_wraith": {
+    "id": "shard_wraith",
+    "name": "Тень осколка",
+    "era": "E2",
+    "level": 7,
+    "desc": "Сгусток тьмы, повторяющий твои движения.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "ocean_rare",
+    "tags": [
+      "ocean",
+      "spirit"
+    ]
+  },
+  "ark_guardian": {
+    "id": "ark_guardian",
+    "name": "Хранитель Ковчега",
+    "era": "E3",
+    "level": 8,
+    "desc": "Фигура в броне, которая не дышит.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "ark_common",
+    "tags": [
+      "ark",
+      "guardian"
+    ]
+  },
+  "ark_beast": {
+    "id": "ark_beast",
+    "name": "Зверь Ковчега",
+    "era": "E3",
+    "level": 9,
+    "desc": "Тварь, которую держали в трюме.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "ark_rare",
+    "tags": [
+      "ark",
+      "beast"
+    ]
+  },
+  "tech_drone": {
+    "id": "tech_drone",
+    "name": "Технодрон",
+    "era": "E4",
+    "level": 10,
+    "desc": "Летающий глаз с иглой.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "techno_common",
+    "tags": [
+      "tech",
+      "fly"
+    ]
+  },
+  "combat_android": {
+    "id": "combat_android",
+    "name": "Боевой андроид",
+    "era": "E4",
+    "level": 11,
+    "desc": "Металлическое тело с чужим лицом.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "techno_rare",
+    "tags": [
+      "tech",
+      "android"
+    ]
+  },
+  "administrator_avatar": {
+    "id": "administrator_avatar",
+    "name": "Аватар Администратора",
+    "era": "E5",
+    "level": 15,
+    "desc": "Не человек и не машина. Просто функция.",
+    "body": {
+      "head": "intact",
+      "torso": "intact"
+    },
+    "loot_table": "admin",
+    "tags": [
+      "admin"
+    ]
+  }
+}

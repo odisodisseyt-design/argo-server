@@ -1,0 +1,15 @@
+{
+  "wounded_leg": {
+    "name": "Повреждённая нога",
+    "blocks": ["run", "jump"],
+    "modifiers": {"climb_oak": 6, "walk_path": 3},
+    "messages": {"climb_oak": "Нога не слушается. Разве что ползти."},
+    "duration_turns": 6
+  },
+  "exhausted": {
+    "name": "Истощение",
+    "blocks": [],
+    "modifiers": {"climb_oak": 3, "strike_stone": 2},
+    "duration_turns": 3
+  }
+}

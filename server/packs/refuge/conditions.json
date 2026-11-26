@@ -1,0 +1,120 @@
+{
+  "wounded_leg": {
+    "name": "Повреждённая нога",
+    "blocks": [
+      "run",
+      "dodge"
+    ],
+    "modifiers": {
+      "move": 3,
+      "attack": -3,
+      "climb": 6
+    },
+    "messages": {
+      "run": "Нога не слушается. Бежать нельзя — разве что ползти.",
+      "move": "Каждый шаг отдаёт болью."
+    },
+    "duration_turns": 8
+  },
+  "bleeding": {
+    "name": "Кровотечение",
+    "blocks": [],
+    "modifiers": {
+      "attack": -3,
+      "run": -2,
+      "cast": -4,
+      "craft": -2
+    },
+    "messages": {
+      "attack": "Кровь на руках мешает держать оружие."
+    },
+    "duration_turns": 4
+  },
+  "virus": {
+    "name": "Заражение",
+    "blocks": [],
+    "modifiers": {
+      "attack": -2,
+      "run": -1,
+      "rest": -2,
+      "move": -1
+    },
+    "messages": {
+      "rest": "Тело горит. Отдых не приносит облегчения."
+    },
+    "duration_turns": 12
+  },
+  "acid_burn": {
+    "name": "Кислотный ожог",
+    "blocks": [],
+    "modifiers": {
+      "dodge": -3,
+      "attack": -2,
+      "move": -1
+    },
+    "duration_turns": 5
+  },
+  "exhausted": {
+    "name": "Истощение",
+    "blocks": [
+      "run"
+    ],
+    "modifiers": {
+      "attack": -3,
+      "climb": 3,
+      "move": -1
+    },
+    "duration_turns": 4
+  },
+  "hypothermia": {
+    "name": "Переохлаждение",
+    "blocks": [],
+    "modifiers": {
+      "attack": -2,
+      "move": -2,
+      "craft": -3,
+      "rest": -1
+    },
+    "duration_turns": 6
+  },
+  "poisoned": {
+    "name": "Отравление",
+    "blocks": [],
+    "modifiers": {
+      "attack": -2,
+      "run": -2,
+      "rest": -3
+    },
+    "duration_turns": 5
+  },
+  "fear": {
+    "name": "Страх",
+    "blocks": [],
+    "modifiers": {
+      "attack": -1,
+      "talk": -2,
+      "cast": -1
+    },
+    "duration_turns": 3
+  },
+  "unconscious": {
+    "name": "Без сознания",
+    "blocks": [
+      "*"
+    ],
+    "modifiers": {},
+    "messages": {
+      "*": "Ты без сознания и не можешь действовать."
+    }
+  },
+  "dead": {
+    "name": "Мёртв",
+    "blocks": [
+      "*"
+    ],
+    "modifiers": {},
+    "messages": {
+      "*": "Мёртвый не может действовать."
+    }
+  }
+}

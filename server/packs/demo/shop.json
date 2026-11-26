@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "currencies": ["gold"],
+  "sections": ["consumables", "equipment", "services"],
+  "items": [
+    {"id": "herb", "name": "Лечебная трава", "section": "consumables", "price": {"gold": 5},
+     "stock": 3, "restock_per_day": 1, "effect": {"remove_conditions": ["wounded_leg"]}},
+    {"id": "rope", "name": "Верёвка", "section": "equipment", "price": {"gold": 12},
+     "stock": 1, "restock_per_day": 0, "effect": {"inventory_add": [{"id": "rope", "name": "Верёвка"}]}}
+  ]
+}

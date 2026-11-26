@@ -1,0 +1,597 @@
+{
+  "zombie_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          3,
+          8
+        ],
+        "xp": [
+          1,
+          3
+        ]
+      },
+      {
+        "weight": 25,
+        "item": "reward_white",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "item": "bandage",
+        "chance": 1
+      },
+      {
+        "weight": 10,
+        "item": "reward_green",
+        "chance": 1
+      }
+    ]
+  },
+  "zombie_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 40,
+        "coins": [
+          10,
+          25
+        ],
+        "xp": [
+          4,
+          8
+        ]
+      },
+      {
+        "weight": 25,
+        "item": "reward_green",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "reward_blue",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "item": "first_aid_kit",
+        "chance": 1
+      }
+    ]
+  },
+  "animal_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 60,
+        "coins": [
+          1,
+          4
+        ],
+        "xp": [
+          1,
+          2
+        ]
+      },
+      {
+        "weight": 25,
+        "item": "stew_can",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "item": "herb_bundle",
+        "chance": 1
+      }
+    ]
+  },
+  "animal_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          5,
+          12
+        ],
+        "xp": [
+          3,
+          6
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "reward_green",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "antibiotics",
+        "chance": 1
+      }
+    ]
+  },
+  "human_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 40,
+        "coins": [
+          5,
+          15
+        ],
+        "xp": [
+          2,
+          5
+        ]
+      },
+      {
+        "weight": 25,
+        "item": "knife_hunting",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "bandage",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "item": "reward_white",
+        "chance": 1
+      }
+    ]
+  },
+  "human_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 40,
+        "coins": [
+          15,
+          40
+        ],
+        "xp": [
+          5,
+          10
+        ]
+      },
+      {
+        "weight": 25,
+        "item": "reward_green",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "reward_blue",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "item": "pistol",
+        "chance": 1
+      }
+    ]
+  },
+  "mutant_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          10,
+          25
+        ],
+        "xp": [
+          5,
+          12
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "reward_blue",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "mana_crystal",
+        "chance": 1
+      }
+    ]
+  },
+  "ocean_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          20,
+          50
+        ],
+        "xp": [
+          8,
+          15
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "spatial_shard",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "reward_blue",
+        "chance": 1
+      }
+    ]
+  },
+  "ocean_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 45,
+        "coins": [
+          40,
+          90
+        ],
+        "xp": [
+          12,
+          25
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "spatial_shard",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "reward_purple",
+        "chance": 1
+      }
+    ]
+  },
+  "ark_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          50,
+          120
+        ],
+        "xp": [
+          20,
+          40
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "ark_key",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "reward_purple",
+        "chance": 1
+      }
+    ]
+  },
+  "ark_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 45,
+        "coins": [
+          100,
+          250
+        ],
+        "xp": [
+          40,
+          80
+        ]
+      },
+      {
+        "weight": 35,
+        "item": "ark_key",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "reward_purple",
+        "chance": 1
+      }
+    ]
+  },
+  "techno_common": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          150,
+          300
+        ],
+        "xp": [
+          50,
+          100
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "tech_module",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "drone_battery",
+        "chance": 1
+      }
+    ]
+  },
+  "techno_rare": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 45,
+        "coins": [
+          300,
+          600
+        ],
+        "xp": [
+          100,
+          200
+        ]
+      },
+      {
+        "weight": 30,
+        "item": "neural_interface",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "cyber_arm",
+        "chance": 1
+      }
+    ]
+  },
+  "admin": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 50,
+        "coins": [
+          1000,
+          2000
+        ],
+        "xp": [
+          500,
+          1000
+        ]
+      },
+      {
+        "weight": 50,
+        "item": "admin_key",
+        "chance": 1
+      }
+    ]
+  },
+  "apartment": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 40,
+        "item": "stew_can",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "water_5l",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "bandage",
+        "chance": 1
+      },
+      {
+        "weight": 15,
+        "coins": [
+          2,
+          6
+        ]
+      }
+    ]
+  },
+  "pharmacy": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 35,
+        "item": "bandage",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "antibiotics",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "painkiller",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          4,
+          10
+        ]
+      }
+    ]
+  },
+  "school": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 30,
+        "item": "backpack",
+        "chance": 1
+      },
+      {
+        "weight": 30,
+        "item": "notebook",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "crackers",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          3,
+          8
+        ]
+      }
+    ]
+  },
+  "hospital": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 30,
+        "item": "first_aid_kit",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "surgical_kit",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "apulin_z10",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          5,
+          15
+        ]
+      }
+    ]
+  },
+  "warehouse": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 30,
+        "item": "lumber",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "nails",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "wire",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          5,
+          12
+        ]
+      }
+    ]
+  },
+  "forest": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 35,
+        "item": "firewood",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "herb_bundle",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "item": "seeds_vegetables",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          1,
+          5
+        ]
+      }
+    ]
+  },
+  "gas_station": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 30,
+        "item": "fuel_can",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "duct_tape",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "lighter",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          4,
+          10
+        ]
+      }
+    ]
+  },
+  "street": {
+    "rolls": 1,
+    "entries": [
+      {
+        "weight": 30,
+        "item": "empty_bottle",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "can_empty",
+        "chance": 1
+      },
+      {
+        "weight": 25,
+        "item": "bandage",
+        "chance": 1
+      },
+      {
+        "weight": 20,
+        "coins": [
+          2,
+          6
+        ]
+      }
+    ]
+  }
+}

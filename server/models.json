@@ -1,0 +1,47 @@
+[
+ {
+  "id": "fast",
+  "title": "Основная · местная",
+  "strength": 3,
+  "speed": 4,
+  "cost": "free",
+  "recommended_for": "Живой рассказ без сети, отвечает быстрее",
+  "provider": "ollama",
+  "intent_model": "tw-qwen35-08b",
+  "narrator_model": "tw-qwen35-2b",
+  "intent_timeout": 8,
+  "narrator_timeout": 35,
+  "available": true,
+  "narrator_max_tokens": 90
+ },
+ {
+  "id": "cheap",
+  "title": "Облачная · DeepSeek Flash",
+  "strength": 5,
+  "speed": 1,
+  "cost": "paid",
+  "recommended_for": "Более длинная проза, если облако отвечает",
+  "provider": "cheapllm",
+  "intent_model": "tw-qwen35-08b",
+  "narrator_model": "deepseek-v4.1-flash-1017",
+  "intent_timeout": 8,
+  "narrator_timeout": 20,
+  "available": true,
+  "narrator_max_tokens": 500
+ },
+ {
+  "id": "balanced",
+  "title": "Спокойная · местная",
+  "strength": 4,
+  "speed": 3,
+  "cost": "free",
+  "recommended_for": "Более длинная проза без спешки",
+  "provider": "ollama",
+  "intent_model": "tw-qwen35-08b",
+  "narrator_model": "tw-qwen35-2b",
+  "intent_timeout": 8,
+  "narrator_timeout": 45,
+  "available": true,
+  "narrator_max_tokens": 160
+ }
+]

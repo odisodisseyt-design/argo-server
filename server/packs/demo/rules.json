@@ -1,0 +1,7 @@
+{
+  "critical_band": {"sure": 2, "unlikely": -1},
+  "initiative_attribute": "agi",
+  "xp_per_step": 3,
+  "allow_resurrection": false,
+  "death_conditions": ["head_destroyed", "heart_destroyed", "bleeding_death"]
+}

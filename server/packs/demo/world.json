@@ -1,0 +1,15 @@
+{
+  "location": {"id": "clearing", "name": "Поляна у старого дуба", "coords": [0, 0, 0], "elevation_m": 120},
+  "time": {"day": 1, "hour": 9, "weather": "clear"},
+  "weather": "clear",
+  "visibility_m": 60,
+  "environment": {},
+  "nearby": [
+    {"id": "old_oak", "name": "Старый дуб", "distance_m": 6, "direction": "С", "height_m": 12,
+     "affordances": ["осмотреть", "взлезть"], "forbidden": ["сломать голыми руками"]},
+    {"id": "grey_stone", "name": "Серый камень", "distance_m": 2, "direction": "В", "height_m": 0.5,
+     "affordances": ["поднять", "ударить"], "forbidden": []},
+    {"id": "path", "name": "Тропа в лес", "distance_m": 8, "direction": "Ю", "height_m": 0,
+     "affordances": ["идти"], "forbidden": []}
+  ]
+}

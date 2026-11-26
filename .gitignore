@@ -1,0 +1,17 @@
+# Локальные данные и тяжёлые артефакты не публикуются
+data/
+models/
+ollama-models/
+android/
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+*.apk
+*.gguf
+.bak.*
+AGENTS.md.bak.*
+env/
+.env
