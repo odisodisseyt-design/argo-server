@@ -170,7 +170,7 @@ def _too_similar(first: str, second: str) -> bool:
     words_b = set(re.findall(r"[а-яё]{4,}", str(second or "").lower()))
     if not words_a or not words_b:
         return False
-    return len(words_a & words_b) / max(1, min(len(words_a), len(words_b))) > 0.62
+    return len(words_a & words_b) / max(1, min(len(words_a), len(words_b))) > 0.78
 
 
 def _fallback_prose(results: list[dict[str, Any]], world_facts: list[str],
@@ -605,6 +605,10 @@ def _deterministic_intent(raw_text: str, pack: dict[str, Any],
             break
     if pack["actions"][action_id].get("needs_target") and not target:
         return None
+    matched_ids = {aid for _, aid in matches}
+    if "move" in matched_ids and target and "attack" not in matched_ids:
+        # «Открыть дверь и выйти» — это переход, а не обыск двери.
+        action_id = "move"
     tags: list[str] = []
     if "ремень" in lowered or "пояс" in lowered:
         tags.append("using_belt")

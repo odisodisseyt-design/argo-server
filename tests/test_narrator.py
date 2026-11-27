@@ -80,6 +80,13 @@ def test_common_present_tense_orders_do_not_need_llm():
     assert "выхожу" in pack["actions"]["move"]["verbs"]
     assert "спускаюсь" in pack["actions"]["move"]["verbs"]
 
+    order = engine._deterministic_intent(
+        "Открываю дверь и выхожу в подъезд.", pack, nearby
+    )
+    assert order is not None
+    assert order["action_id"] == "move"
+    assert order["target"] == "exit_stairwell"
+
 
 async def test_verb_without_reachable_target_skips_intent_model(player, monkeypatch):
     """A known verb with no nearby target must not spend seconds on the LLM."""
