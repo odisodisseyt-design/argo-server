@@ -44,6 +44,9 @@ def test_grounded_prose_drops_invented_entities():
                    "фигура в серой куртке.")
     assert engine._grounded_prose(fake_person, source + " Выход: подъезд") == ""
 
+    fake_name = "Вася вынул из контейнера старый рюкзак и открыл его."
+    assert engine._grounded_prose(fake_name, source + " контейнер, рюкзак") == ""
+
 
 def test_grounded_prose_keeps_normal_inflections():
     source = "Гриша держит фонарь. Вода капает на асфальт. лестница, подъезд"

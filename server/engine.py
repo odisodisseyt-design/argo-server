@@ -119,11 +119,21 @@ def _grounded_prose(text: str, source: str) -> str:
     """
     normalized = str(source).lower().replace("ё", "е")
     stems = {word[:4] for word in re.findall(r"[а-яё]{4,}", normalized)}
+    known_names = set(re.findall(r"[а-яёё]{3,}", normalized)) | {
+        "ты", "система", "москва", "арго", "чертаново",
+    }
     kept: list[str] = []
     for sentence in re.split(r"(?<=[.!?])\s+", str(text or "")):
         words = [word.replace("ё", "е") for word in re.findall(r"[а-яё]{5,}", sentence.lower())
                  if word not in _GROUND_STOP]
         if not words:
+            continue
+        # A small model happily invents a name mid-sentence. Capitalised words
+        # that are not in the supplied facts are never allowed through.
+        invented_names = [name.lower().replace("ё", "е") for name in
+                          re.findall(r"\b[А-ЯЁ][а-яё]{2,}\b", sentence)]
+        if any(name not in known_names and name[:4] not in stems
+               for name in invented_names):
             continue
         hits = sum(1 for word in words if word[:4] in stems)
         # A one-word atmosphere line must be wholly grounded; with three or
