@@ -32,12 +32,12 @@ async def test_narrator_timeout_falls_back_to_facts(player, monkeypatch):
     _real_complete(monkeypatch)
     monkeypatch.setattr(provider, "_ollama", slow)
     campaign = await engine.create_campaign("refuge", "Тест", player, [], model_id="fast")
-    await engine.submit_order(campaign, player["id"], "Осмотреться")
+    await engine.submit_order(campaign, player["id"], "Обыскать стол")
     row = await db.fetchone(
         "SELECT result_json FROM steps WHERE campaign_id=?", (campaign,)
     )
     payload = db.loads(row["result_json"], {})
     prose = payload["narrations"][str(player["id"])]
-    assert prose and "Ты обводишь взглядом" in prose
+    assert prose and "Ты находишь" in prose
     logs = await db.fetchall("SELECT * FROM llm_logs WHERE purpose='narrator'")
     assert logs and logs[-1]["error"].startswith("timeout")

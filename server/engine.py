@@ -165,6 +165,8 @@ def _polish_prose(text: str, fact: str) -> str:
             continue
         if _latin_ratio(sentence) > 0.25 or _looping(sentence):
             continue
+        if re.search(r"\b(словно|будто|как будто|внезапно|вдруг)\b", lowered):
+            continue
         if any(term in lowered for term in ("фракц", "отношение", "система подключена",
                                             "уровень", "опыт +", "очки опыта")):
             continue
@@ -1434,6 +1436,17 @@ async def _narrate_one(member: dict[str, Any], state: dict[str, Any], pack: dict
                 text = "Ты проходишь дальше. " + _sentence(detail)
         own_parts.append(text)
     own_text = _join_sentences(own_parts)
+    all_texts = [str(item.get("text", "")) for item in results if item.get("text")]
+    concrete = [text for text in all_texts
+                if not text.lower().startswith(_GENERIC_ACTION_PREFIXES)]
+    if not concrete:
+        # There was no real action to narrate. A tiny model fills that vacuum
+        # with nonsense; the engine's canon description is better prose here.
+        facts = list(world_facts)
+        if (raw_text and not raw_text.startswith("(авто")
+                and any(item.get("action_id") == "react" for item in results)):
+            facts.append(raw_text)
+        return uid, _fallback_prose(results, facts, state, member, step_no), []
     entities: list[str] = []
     prose = ""
     started = time.monotonic()
@@ -1461,9 +1474,6 @@ async def _narrate_one(member: dict[str, Any], state: dict[str, Any], pack: dict
         if not prose and text.strip():
             retry_reason = ("Предыдущий ответ не подошёл. Напиши ровно два коротких "
                             "предложения по фактам, без повторов и выдумок.")
-        elif prose and recent_prose and _too_similar(prose, recent_prose[0]):
-            retry_reason = ("Предыдущая сцена уже описана. Не повторяй её слова, "
-                            "опиши только то, что изменилось в ПРОИЗОШЛО.")
         if retry_reason and time_left() > 6:
             retry_text = await provider.complete(
                 "narrator",

@@ -427,7 +427,7 @@ def _tick_ecology(pack: dict[str, Any], state: dict[str, Any], rng: random.Rando
                 ecology[mob_id] = int(ecology.get(mob_id, 0)) + 1
                 if lid == state.get("world", {}).get("location", {}).get("id"):
                     data = catalog.mob(pack, mob_id) or {}
-                    facts.append(f"Где-то рядом появился {data.get('name', mob_id)}.")
+                    facts.append(f"Где-то рядом появилось существо: {data.get('name', mob_id)}.")
     return facts
 
 
